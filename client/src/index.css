@@ -13,6 +13,7 @@
 @import "./landing-cinematic.css";
 @import "./access-gateway.css";
 @import "./access-barrier.css";
+@import "./landing-restraint.css";
 
 @custom-variant dark (&:is(.dark *));
 

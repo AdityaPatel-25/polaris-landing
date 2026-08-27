@@ -177,15 +177,15 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.72, ease: [0.23, 1, 0.32, 1] }}
             >
-              <p className="eyebrow"><Satellite size={14} /> Space technology × polar science</p>
-              <div className="hero-manifest" aria-label="POLARIS platform scope"><span>01 / Polar science</span><span>02 / Space technology</span><span>03 / Research</span><span>04 / Exploration</span></div>
-              <h1 id="hero-title">One gateway<br />to <em>polar</em> science.</h1>
+              <p className="eyebrow"><Satellite size={14} /> Polar Earth observation platform</p>
+              <div className="hero-manifest" aria-label="POLARIS platform scope"><span>Polar science</span><span>Space technology</span><span>Research</span><span>Exploration</span></div>
+              <h1 id="hero-title">Observe the poles.<br /><em>Connect</em> the evidence.</h1>
               <p className="hero-lede">
-                Explore research, expeditions, discoveries and educational knowledge from the Arctic and Antarctic — connected in one intelligent platform.
+                A common scientific platform linking satellite observations, field expeditions and research knowledge across the Arctic and Antarctic.
               </p>
               <div className="hero-actions">
-                <a href="/access" className="primary-action">Access POLARIS <ArrowRight size={18} /></a>
-                <a href="#expeditions" className="secondary-action"><Play size={14} fill="currentColor" /> Explore expeditions</a>
+                <a href="/access" className="primary-action">Enter POLARIS <ArrowRight size={18} /></a>
+                <a href="#expeditions" className="secondary-action"><Play size={14} fill="currentColor" /> View active expeditions</a>
               </div>
             </motion.div>
 

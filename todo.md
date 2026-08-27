@@ -26,3 +26,11 @@
 - [x] Add Admin-controlled approve, revoke, and pending access states, then protect User and Researcher portal entry accordingly.
 - [x] Verify the landing-page motion, access routing, permission feedback, desktop/mobile layouts, and production build.
 - [x] Save and deliver the completed cinematic landing and access-control refinement.
+
+## Institutional Landing-Page Refinement
+
+- [x] Identify and remove excessive visual effects, synthetic labels, and dense decorative treatments from the landing page.
+- [x] Rebalance the landing page around credible imagery, editorial typography, restrained data cues, and quieter motion.
+- [x] Remove all “LOCAL SIH DEMONSTRATION” and “local demonstration” language from the access and permission interfaces.
+- [x] Check the revised landing page and access gateway at desktop and mobile widths, then run the production build.
+- [x] Save and deliver the refined institutional presentation checkpoint.
