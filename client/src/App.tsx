@@ -9,25 +9,27 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { PolarisProvider } from "./contexts/PolarisContext";
+import { AccessBarrier } from "./components/AccessBarrier";
 import { AdminRoutes } from "./pages/AdminPortal";
+import AccessGateway from "./pages/AccessGateway";
 import Home from "./pages/Home";
 import { ResearcherRoutes } from "./pages/ResearcherPortal";
-import RoleSelection from "./pages/RoleSelection";
 import { UserRoutes } from "./pages/UserPortal";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
-      <Route path="/choose" component={RoleSelection} />
-      <Route path="/user/repository/:id" component={UserRoutes} />
-      <Route path="/user/learn/quiz" component={UserRoutes} />
-      <Route path="/user/:section" component={UserRoutes} />
-      <Route path="/user" component={UserRoutes} />
-      <Route path="/researcher/:section" component={ResearcherRoutes} />
-      <Route path="/researcher" component={ResearcherRoutes} />
-      <Route path="/admin/:section" component={AdminRoutes} />
-      <Route path="/admin" component={AdminRoutes} />
+      <Route path="/access" component={AccessGateway} />
+      <Route path="/choose" component={AccessGateway} />
+      <Route path="/user/repository/:id">{() => <AccessBarrier role="Explorer"><UserRoutes /></AccessBarrier>}</Route>
+      <Route path="/user/learn/quiz">{() => <AccessBarrier role="Explorer"><UserRoutes /></AccessBarrier>}</Route>
+      <Route path="/user/:section">{() => <AccessBarrier role="Explorer"><UserRoutes /></AccessBarrier>}</Route>
+      <Route path="/user">{() => <AccessBarrier role="Explorer"><UserRoutes /></AccessBarrier>}</Route>
+      <Route path="/researcher/:section">{() => <AccessBarrier role="Researcher"><ResearcherRoutes /></AccessBarrier>}</Route>
+      <Route path="/researcher">{() => <AccessBarrier role="Researcher"><ResearcherRoutes /></AccessBarrier>}</Route>
+      <Route path="/admin/:section">{() => <AccessBarrier role="Command"><AdminRoutes /></AccessBarrier>}</Route>
+      <Route path="/admin">{() => <AccessBarrier role="Command"><AdminRoutes /></AccessBarrier>}</Route>
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>

@@ -7,6 +7,7 @@ import { ChevronLeft, ChevronRight, Compass, Menu, Search, X } from "lucide-reac
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { NorthStarMark } from "@/components/NorthStarMark";
+import { usePolaris } from "@/contexts/PolarisContext";
 
 export interface PortalNavItem { label: string; href: string; icon: LucideIcon; }
 
@@ -22,6 +23,7 @@ export function PortalShell({ role, roleLabel, nav, children, action }: PortalSh
   const [collapsed, setCollapsed] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [location, navigate] = useLocation();
+  const { session, signOut } = usePolaris();
   const isActive = (item: PortalNavItem) => location === item.href || (item.href.split("/").length > 2 && location.startsWith(`${item.href}/`));
   const activeItem = nav.find(isActive)?.label ?? "Overview";
 
@@ -39,7 +41,7 @@ export function PortalShell({ role, roleLabel, nav, children, action }: PortalSh
             return <Link href={item.href} className={`portal-nav-link ${active ? "portal-nav-link--active" : ""}`} key={item.href} onClick={() => setMobileOpen(false)}><item.icon size={18} /><span>{item.label}</span>{active && <i />}</Link>;
           })}
         </nav>
-        <div className="rail-footer"><Link href="/choose" className="role-switch"><span className="role-switch-dot" /> <span>Switch experience</span></Link><p>POLARIS / SIH 2026</p></div>
+        <div className="rail-footer"><Link href="/access" className="role-switch"><span className="role-switch-dot" /> <span>Switch experience</span></Link><button className="session-exit" onClick={() => { signOut(); navigate("/access"); }}><span>Exit {session?.name ?? "session"}</span></button><p>POLARIS / SIH 2026</p></div>
       </aside>
       {mobileOpen && <button className="portal-scrim" aria-label="Close menu" onClick={() => setMobileOpen(false)} />}
       <section className="portal-stage">

@@ -10,6 +10,9 @@
 @import "./audit-refinement.css";
 @import "./micro-refinement.css";
 @import "./surface-refinement.css";
+@import "./landing-cinematic.css";
+@import "./access-gateway.css";
+@import "./access-barrier.css";
 
 @custom-variant dark (&:is(.dark *));
 

@@ -131,9 +131,9 @@ export default function Home() {
         </nav>
 
         <div className="nav-actions">
-          <button className="text-button" onClick={() => notify("Sign in")}>Sign in</button>
-          <a className="nav-cta" href="/choose">
-            Explore platform <ArrowUpRight size={15} />
+          <a className="text-button" href="/access">Sign in</a>
+          <a className="nav-cta" href="/access">
+            Access gateway <ArrowUpRight size={15} />
           </a>
           <button
             className="menu-button"
@@ -151,7 +151,7 @@ export default function Home() {
               {label}
             </NavLink>
           ))}
-          <button className="mobile-signin" onClick={() => notify("Sign in")}>Sign in to your workspace</button>
+          <a className="mobile-signin" href="/access">Sign in to your workspace</a>
         </div>
       </header>
 
@@ -178,12 +178,13 @@ export default function Home() {
               transition={{ duration: 0.72, ease: [0.23, 1, 0.32, 1] }}
             >
               <p className="eyebrow"><Satellite size={14} /> Space technology × polar science</p>
+              <div className="hero-manifest" aria-label="POLARIS platform scope"><span>01 / Polar science</span><span>02 / Space technology</span><span>03 / Research</span><span>04 / Exploration</span></div>
               <h1 id="hero-title">One gateway<br />to <em>polar</em> science.</h1>
               <p className="hero-lede">
                 Explore research, expeditions, discoveries and educational knowledge from the Arctic and Antarctic — connected in one intelligent platform.
               </p>
               <div className="hero-actions">
-                <a href="/choose" className="primary-action">Explore POLARIS <ArrowRight size={18} /></a>
+                <a href="/access" className="primary-action">Access POLARIS <ArrowRight size={18} /></a>
                 <a href="#expeditions" className="secondary-action"><Play size={14} fill="currentColor" /> Explore expeditions</a>
               </div>
             </motion.div>
@@ -381,7 +382,7 @@ export default function Home() {
           <div className="section-shell closing-content">
             <p className="eyebrow"><Radio size={14} /> Open a clearer horizon</p>
             <h2>The poles are changing.<br /><em>Understanding</em> them starts here.</h2>
-            <a className="closing-action" href="/choose">Enter POLARIS <ArrowRight size={19} /></a>
+            <a className="closing-action" href="/access">Access the observatory <ArrowRight size={19} /></a>
             <p className="closing-coordinate"><NorthStarMark /> NORTH STAR LOCK / POLARIS NETWORK / CONTINUE THE TRACE</p>
           </div>
         </section>

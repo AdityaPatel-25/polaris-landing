@@ -17,3 +17,12 @@
 - [x] Refine shared shell, typography, surface treatment, data displays, controls, and navigation cues without changing routes or workflows.
 - [x] Recheck visual quality, responsiveness, and interaction feedback after the focused design pass.
 - [x] Save and deliver the audited visual/UX refinement checkpoint.
+
+## Cinematic Landing Page and Admin-Governed Access
+
+- [x] Define a clear first-screen narrative for polar science, space technology, research, and exploration, plus the local access/approval behavior.
+- [x] Redesign the landing-page hero, evidence sections, polar-region identities, map, outreach, and closing CTA with cinematic editorial motion.
+- [x] Build a local login/access gateway with distinct User, Researcher, and Admin states.
+- [x] Add Admin-controlled approve, revoke, and pending access states, then protect User and Researcher portal entry accordingly.
+- [x] Verify the landing-page motion, access routing, permission feedback, desktop/mobile layouts, and production build.
+- [x] Save and deliver the completed cinematic landing and access-control refinement.

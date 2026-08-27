@@ -20,7 +20,7 @@ const userNav: PortalNavItem[] = [
   { label: "Overview", href: "/user", icon: Compass }, { label: "Knowledge", href: "/user/repository", icon: FileText }, { label: "Expeditions", href: "/user/expeditions", icon: Map }, { label: "Media", href: "/user/media", icon: ImageIcon }, { label: "Learn", href: "/user/learn", icon: GraduationCap }, { label: "Polar Assistant", href: "/user/assistant", icon: MessageCircle }, { label: "Saved", href: "/user/saved", icon: Bookmark },
 ];
 
-function UserShell({ children }: { children: React.ReactNode }) { return <PortalShell role="Explorer" roleLabel="Public portal" nav={userNav} action={<Link href="/choose" className="role-header-button">Switch role</Link>}>{children}</PortalShell>; }
+function UserShell({ children }: { children: React.ReactNode }) { return <PortalShell role="Explorer" roleLabel="Public portal" nav={userNav} action={<Link href="/access" className="role-header-button">Switch role</Link>}>{children}</PortalShell>; }
 
 function RecordTag({ children }: { children: React.ReactNode }) { return <span className="record-tag">{children}</span>; }
 
