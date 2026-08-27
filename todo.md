@@ -149,3 +149,10 @@
 - [x] Rebuild the submission wizard and file-upload journey as a polished scientific intake workflow.
 - [x] Validate the redesigned Researcher Portal at desktop and mobile widths, including the production build.
 - [x] Save and deliver the completed Researcher Portal redesign checkpoint.
+
+## Dual-Role Admin Access Queue
+
+- [x] Inspect Explorer and Researcher request creation plus the Admin queue filtering logic.
+- [x] Show pending Explorer/User requests alongside Researcher requests in Admin → Users.
+- [x] Verify Admin approval and revocation behavior for both local role types, then run the production build.
+- [x] Save and deliver the corrected dual-role access queue.

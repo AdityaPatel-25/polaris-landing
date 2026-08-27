@@ -52,6 +52,7 @@ export function PolarisProvider({ children }: { children: ReactNode }) {
   const [savedIds, setSavedIds] = useState<string[]>(["cry-241", "med-03", "xli-ant"]);
   const [session, setSession] = useState<PolarisSession | null>(null);
   const [accessRequests, setAccessRequests] = useState<AccessRequest[]>([
+    { id: "access-pending-02", name: "Ira Sood", email: "ira.sood@polarstudies.in", role: "Explorer", status: "pending", requestedAt: "Today / 11:05 UTC" },
     { id: "access-pending-01", name: "Kavya Das", email: "kavya.das@ncpor.in", role: "Researcher", status: "pending", requestedAt: "Today / 10:40 UTC" },
   ]);
 

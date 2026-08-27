@@ -41,3 +41,15 @@ The reconstructed session opened the redesigned dashboard with the corrected pub
 The dashboard review-lane action now deep-links correctly to Research Management with `filter=pending` applied. Interactive review confirmed that the visible ledger narrows to the single pending research record and the status summary remains consistent.
 
 The automated route-capture context initializes a fresh in-memory session and therefore displays the existing authorization barrier rather than the protected Researcher routes. Visual and interaction validation of the signed-in Researcher dashboard, management, discovery, submission, and expedition screens was consequently completed in the authenticated browser context; the separate route-capture result only confirms access protection remains active.
+
+For the dual-role access change, the Admin access mode was reopened through the existing gateway. The next validation step is to load the designated local Admin profile and inspect the updated Admin → Users queue.
+
+The designated Admin profile verified successfully after loading `command@polaris.in`, preserving the existing local Admin-only sign-in control. The Admin portal is ready for the updated Users queue validation.
+
+Admin → Users now visibly lists both request types: an Explorer/User request marked EX and a Researcher request marked RS. Approving the Explorer/User request moved it into recent grant activity and added the approved Explorer to the local directory, confirming role-specific approval works for the newly surfaced request type.
+
+The local demonstration state was reset through a fresh access-gateway navigation after approval testing, which restores both pending queue entries. The Admin mode is selected again so the Explorer/User revoke behavior can be validated before final build verification.
+
+The designated Admin session was restored successfully after the local-state reset and is ready to exercise the Explorer/User revoke action.
+
+The Explorer/User revoke control was exercised successfully: the request left the active queue, the awaiting-review count changed from two to one, and the history recorded the Explorer/User entry as revoked. Together with the completed approval checks for both Explorer/User and Researcher roles, this confirms the dual-role Admin access controls work in the local prototype.
