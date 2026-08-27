@@ -75,3 +75,6 @@ The wordmark is a wide, technical **POLARIS** lockup with carefully spaced geome
 - Research and learning modules use archive and field-note hierarchy so they read as evidence records rather than generic marketing cards.
 - All portal routes inherit a midnight command bar, POLARIS aperture glyph, coordinate field, and Aurora Cyan status/action signal so the operating environment is recognisably one observatory.
 - Form, dashboard, moderation, and empty states retain archive metadata and telemetry motifs rather than reverting to default application surfaces.
+- Access surfaces behave as observatory **access ledgers**: a readable credential sheet carries coordinate rules, archive numbers, mode labels, and mission-status framing rather than looking like a generic login card.
+- Aurora Cyan is used only for active access mode, verified access, orbital paths, coordinates, and primary action states; inactive controls remain cool white and muted slate.
+- Role selection is expressed as an instrument mode—each choice is numbered, factual, and part of the same polar observation workflow.

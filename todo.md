@@ -34,3 +34,10 @@
 - [x] Remove all “LOCAL SIH DEMONSTRATION” and “local demonstration” language from the access and permission interfaces.
 - [x] Check the revised landing page and access gateway at desktop and mobile widths, then run the production build.
 - [x] Save and deliver the refined institutional presentation checkpoint.
+
+## Reference-Inspired POLARIS Login Page
+
+- [x] Translate the reference’s split editorial composition into a distinct POLARIS polar-orbit access direction.
+- [x] Rebuild the access gateway with an animated visual field, an elevated role-login form, and retained Command approval logic.
+- [x] Verify visual quality, interaction affordances, and mobile responsiveness for the revised login page.
+- [x] Save and deliver the completed POLARIS login-page checkpoint.
