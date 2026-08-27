@@ -1,0 +1,49 @@
+/**
+ * Orbital Editorial portal chrome: a collapsible mission rail, dark instrument header,
+ * and route-aware contextual controls shared across all POLARIS roles.
+ */
+import type { LucideIcon } from "lucide-react";
+import { ChevronLeft, ChevronRight, Compass, Menu, Search, X } from "lucide-react";
+import { useState } from "react";
+import { Link, useLocation } from "wouter";
+
+export interface PortalNavItem { label: string; href: string; icon: LucideIcon; }
+
+interface PortalShellProps {
+  role: "Explorer" | "Researcher" | "Command";
+  roleLabel: string;
+  nav: PortalNavItem[];
+  children: React.ReactNode;
+  action?: React.ReactNode;
+}
+
+export function PortalShell({ role, roleLabel, nav, children, action }: PortalShellProps) {
+  const [collapsed, setCollapsed] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [location] = useLocation();
+  const activeItem = nav.find((item) => location === item.href || (item.href !== "/user" && location.startsWith(`${item.href}/`)))?.label ?? "Overview";
+
+  return (
+    <div className={`portal-frame ${collapsed ? "portal-frame--collapsed" : ""}`}>
+      <aside className={`portal-rail ${mobileOpen ? "portal-rail--open" : ""}`}>
+        <div className="rail-top">
+          <Link href="/" className="rail-brand" aria-label="POLARIS landing page"><img src="/manus-storage/polaris-logo_7787b873.png" alt="" /><span>POLARIS</span></Link>
+          <button className="rail-collapse" onClick={() => setCollapsed((value) => !value)} aria-label={collapsed ? "Expand sidebar" : "Collapse sidebar"}>{collapsed ? <ChevronRight size={16} /> : <ChevronLeft size={16} />}</button>
+        </div>
+        <div className="role-chip"><Compass size={13} /><span>{role} / {roleLabel}</span></div>
+        <nav className="portal-nav" aria-label={`${role} portal navigation`}>
+          {nav.map((item) => {
+            const active = location === item.href || (item.href !== "/user" && location.startsWith(`${item.href}/`));
+            return <Link href={item.href} className={`portal-nav-link ${active ? "portal-nav-link--active" : ""}`} key={item.href} onClick={() => setMobileOpen(false)}><item.icon size={18} /><span>{item.label}</span>{active && <i />}</Link>;
+          })}
+        </nav>
+        <div className="rail-footer"><Link href="/choose" className="role-switch"><span className="role-switch-dot" /> <span>Switch experience</span></Link><p>POLARIS / SIH 2026</p></div>
+      </aside>
+      {mobileOpen && <button className="portal-scrim" aria-label="Close menu" onClick={() => setMobileOpen(false)} />}
+      <section className="portal-stage">
+        <header className="portal-header"><button className="mobile-menu-trigger" onClick={() => setMobileOpen(true)} aria-label="Open portal menu"><Menu size={21} /></button><div className="page-indicator"><span>{roleLabel}</span><b>{activeItem}</b></div><div className="portal-header-actions"><label className="header-search"><Search size={15} /><input placeholder="Search POLARIS" aria-label="Search POLARIS" onKeyDown={(event) => { if (event.key === "Enter") window.location.assign(`/user/repository?q=${encodeURIComponent(event.currentTarget.value)}`); }} /></label>{action}</div></header>
+        <main className="portal-content">{children}</main>
+      </section>
+    </div>
+  );
+}

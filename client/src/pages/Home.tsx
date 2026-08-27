@@ -132,7 +132,7 @@ export default function Home() {
 
         <div className="nav-actions">
           <button className="text-button" onClick={() => notify("Sign in")}>Sign in</button>
-          <a className="nav-cta" href="#explore">
+          <a className="nav-cta" href="/choose">
             Explore platform <ArrowUpRight size={15} />
           </a>
           <button
@@ -183,7 +183,7 @@ export default function Home() {
                 Explore research, expeditions, discoveries and educational knowledge from the Arctic and Antarctic — connected in one intelligent platform.
               </p>
               <div className="hero-actions">
-                <a href="#explore" className="primary-action">Explore POLARIS <ArrowRight size={18} /></a>
+                <a href="/choose" className="primary-action">Explore POLARIS <ArrowRight size={18} /></a>
                 <a href="#expeditions" className="secondary-action"><Play size={14} fill="currentColor" /> Explore expeditions</a>
               </div>
             </motion.div>
@@ -381,7 +381,7 @@ export default function Home() {
           <div className="section-shell closing-content">
             <p className="eyebrow"><Radio size={14} /> Open a clearer horizon</p>
             <h2>The poles are changing.<br /><em>Understanding</em> them starts here.</h2>
-            <button className="closing-action" onClick={() => document.querySelector("#top")?.scrollIntoView({ behavior: "smooth" })}>Enter POLARIS <ArrowRight size={19} /></button>
+            <a className="closing-action" href="/choose">Enter POLARIS <ArrowRight size={19} /></a>
             <p className="closing-coordinate"><img src={logoImage} alt="" /> NORTH STAR LOCK / POLARIS NETWORK / CONTINUE THE TRACE</p>
           </div>
         </section>

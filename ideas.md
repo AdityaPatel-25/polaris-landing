@@ -73,3 +73,5 @@ The wordmark is a wide, technical **POLARIS** lockup with carefully spaced geome
 - Every section carries a visible orbital-editorial device: a coordinate rule, archive number, route trace, instrument readout, latitude capsule, or field-note label.
 - The cyan north-star aperture recurs as the primary POLARIS glyph. Aurora Cyan is reserved for actions, live signals, paths, and important evidence markers.
 - Research and learning modules use archive and field-note hierarchy so they read as evidence records rather than generic marketing cards.
+- All portal routes inherit a midnight command bar, POLARIS aperture glyph, coordinate field, and Aurora Cyan status/action signal so the operating environment is recognisably one observatory.
+- Form, dashboard, moderation, and empty states retain archive metadata and telemetry motifs rather than reverting to default application surfaces.
