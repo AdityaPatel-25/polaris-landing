@@ -27,6 +27,12 @@ export function PortalShell({ role, roleLabel, nav, children, action }: PortalSh
   const visibleRole = role === "Command" ? "Admin" : role;
   const isActive = (item: PortalNavItem) => location === item.href || (item.href.split("/").length > 2 && location.startsWith(`${item.href}/`));
   const activeItem = nav.find(isActive)?.label ?? "Overview";
+  const portalHome = nav[0]?.href ?? "/";
+  const hasContextualBack = location !== portalHome;
+  const goBack = () => {
+    if (window.history.length > 1) window.history.back();
+    else navigate(portalHome);
+  };
 
   return (
     <div className={`portal-frame portal-frame--${role.toLowerCase()} ${collapsed ? "portal-frame--collapsed" : ""}`}>
@@ -46,7 +52,7 @@ export function PortalShell({ role, roleLabel, nav, children, action }: PortalSh
       </aside>
       {mobileOpen && <button className="portal-scrim" aria-label="Close menu" onClick={() => setMobileOpen(false)} />}
       <section className="portal-stage">
-        <header className="portal-header"><button className="mobile-menu-trigger" onClick={() => setMobileOpen(true)} aria-label="Open portal menu"><Menu size={21} /></button><div className="page-indicator"><span>{roleLabel}</span><b>{activeItem}</b></div><div className="portal-header-actions"><label className="header-search"><Search size={15} /><input placeholder="Search POLARIS" aria-label="Search POLARIS" onKeyDown={(event) => { if (event.key === "Enter") navigate(`/user/repository?q=${encodeURIComponent(event.currentTarget.value)}`); }} /></label>{action}</div></header>
+        <header className="portal-header"><button className="mobile-menu-trigger" onClick={() => setMobileOpen(true)} aria-label="Open portal menu"><Menu size={21} /></button><div className="page-indicator">{hasContextualBack && <button type="button" className="portal-context-back" onClick={goBack} aria-label={`Go back from ${activeItem}`}><ChevronLeft size={14} /><span>Back</span></button>}<div className="page-indicator-label"><span>{roleLabel}</span><b>{activeItem}</b></div></div><div className="portal-header-actions"><label className="header-search"><Search size={15} /><input placeholder="Search POLARIS" aria-label="Search POLARIS" onKeyDown={(event) => { if (event.key === "Enter") navigate(`/user/repository?q=${encodeURIComponent(event.currentTarget.value)}`); }} /></label>{action}</div></header>
         <main className="portal-content">{children}</main>
       </section>
     </div>

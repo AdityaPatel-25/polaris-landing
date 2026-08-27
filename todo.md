@@ -156,3 +156,10 @@
 - [x] Show pending Explorer/User requests alongside Researcher requests in Admin → Users.
 - [x] Verify Admin approval and revocation behavior for both local role types, then run the production build.
 - [x] Save and deliver the corrected dual-role access queue.
+
+## Contextual Portal Back Navigation
+
+- [x] Identify portal detail and workflow routes that need a contextual previous-page action.
+- [x] Add a reusable, accessible back-navigation control with safe route fallbacks.
+- [x] Verify the control across relevant desktop and mobile portal routes, then run the production build.
+- [x] Save and deliver the portal back-navigation update.

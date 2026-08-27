@@ -53,3 +53,11 @@ The local demonstration state was reset through a fresh access-gateway navigatio
 The designated Admin session was restored successfully after the local-state reset and is ready to exercise the Explorer/User revoke action.
 
 The Explorer/User revoke control was exercised successfully: the request left the active queue, the awaiting-review count changed from two to one, and the history recorded the Explorer/User entry as revoked. Together with the completed approval checks for both Explorer/User and Researcher roles, this confirms the dual-role Admin access controls work in the local prototype.
+
+For the contextual-navigation review, a fresh protected route correctly redirected to the access gateway after the shell hot reload. The Admin session will be re-established through the existing local gateway before verifying the back action in a client-side route transition.
+
+The designated Admin profile has been loaded again. The remaining validation will enter the Admin portal, navigate to a subpage through its rail, and use the new contextual back control to return to the dashboard.
+
+The live Admin Users route now shows the new compact Back control in the shared portal header. It is visible only on the subpage, leaving the dashboard header uncluttered as intended.
+
+Clicking the shared Back control returned from Admin → Users to the immediately previous Admin dashboard route, confirming that the browser-history path functions correctly for contextual portal navigation.
