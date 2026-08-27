@@ -106,3 +106,16 @@
 - [x] Implement the viewport-triggered count-up animation for all four platform statistics.
 - [x] Verify the counter behavior and production build.
 - [x] Save and deliver the animated statistic checkpoint.
+
+## Larger Platform-Signal Typography
+
+- [x] Define a larger medium-weight display scale for the platform-signal values.
+- [x] Apply the increased type scale while preserving the rapid count-up animation.
+- [x] Verify the enlarged values remain balanced and readable in the landing-page preview.
+- [ ] Save and deliver the enlarged statistic typography checkpoint.
+
+## Simplified Main Navigation
+
+- [x] Remove the Access gateway button from the landing-page navigation.
+- [x] Preserve the Sign in route and verify the streamlined navigation in preview and production build.
+- [x] Save and deliver the simplified navigation checkpoint.

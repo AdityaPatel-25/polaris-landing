@@ -24,6 +24,7 @@
 @import "./login-visual-refresh.css";
 @import "./explorer-engagement.css";
 @import "./main-hero-refresh.css";
+@import "./signal-type-scale.css";
 
 @custom-variant dark (&:is(.dark *));
 

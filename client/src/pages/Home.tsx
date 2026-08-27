@@ -107,7 +107,7 @@ function AnimatedNumber({ value }: { value: number }) {
     return () => cancelAnimationFrame(frame);
   }, [started, value]);
 
-  return <span ref={counterRef}>{new Intl.NumberFormat("en-US").format(display)}</span>;
+  return <span className="signal-counter-value" ref={counterRef}>{new Intl.NumberFormat("en-US").format(display)}</span>;
 }
 
 function NavLink({ href, children, onSelect }: { href: string; children: string; onSelect?: () => void }) {
@@ -151,9 +151,6 @@ export default function Home() {
 
         <div className="nav-actions">
           <a className="text-button" href="/access">Sign in</a>
-          <a className="nav-cta" href="/access">
-            Access gateway <ArrowUpRight size={15} />
-          </a>
           <button
             className="menu-button"
             aria-label={menuOpen ? "Close menu" : "Open menu"}
