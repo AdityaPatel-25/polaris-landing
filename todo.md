@@ -9,3 +9,11 @@
 - [x] Connect cross-role workflow transitions using realistic local mock state.
 - [x] Validate key desktop/mobile flows, type safety, and production build.
 - [ ] Save the completed application checkpoint and deliver it.
+
+## Visual and UX Audit Refinement
+
+- [x] Review the landing page, role gateway, Explorer, Researcher, and Command routes for hierarchy, density, spacing, and visual consistency.
+- [x] Inspect representative content, map, form, moderation, and empty states at desktop and mobile widths.
+- [x] Refine shared shell, typography, surface treatment, data displays, controls, and navigation cues without changing routes or workflows.
+- [x] Recheck visual quality, responsiveness, and interaction feedback after the focused design pass.
+- [x] Save and deliver the audited visual/UX refinement checkpoint.

@@ -47,6 +47,7 @@ export interface MediaAsset {
   date: string;
   hue: string;
   caption: string;
+  image: string;
 }
 
 export interface LearningTopic {
@@ -138,9 +139,13 @@ const mediaTitles: Array<[string, MediaType, Region, string[], string, string]> 
   ["Southern Ocean, one connected system", "Video", "Southern Ocean", ["Climate", "Ocean"], "POLARIS Learning Lab", "An introduction to the circulation surrounding Antarctica."],
 ];
 
+const mediaImages = [
+  "/manus-storage/polaris-research-vessel_a865d520.jpg", "/manus-storage/polaris-snow-station_0866ded3.jpg", "/manus-storage/polaris-sea-ice-satellite_654124c6.jpg", "/manus-storage/polaris-blue-station_aca4e93f.jpg", "/manus-storage/polaris-halley-station_69673f97.jpg", "/manus-storage/polaris-deck-team_7d35bc94.jpg", "/manus-storage/polaris-ice-shelf_e490b025.webp", "/manus-storage/polaris-polar-bear_74ee09ce.jpg", "/manus-storage/polaris-coast-satellite_bc55447e.jpeg", "/manus-storage/polaris-iceberg-ecosystem_21a00dbe.jpg", "/manus-storage/polaris-iceberg-vessel_193583e4.jpg", "/manus-storage/polaris-polar-bear-ice_172c721c.jpg", "/manus-storage/polaris-arctic-ship_593458bd.jpg", "/manus-storage/polaris-hero-earth_e6b6028e.jpg", "/manus-storage/polaris-arctic_5aabdf27.jpg", "/manus-storage/polaris-antarctica_6e927572.jpg", "/manus-storage/polaris-expedition-map_a222e81c.jpg"
+];
+
 export const mediaAssets: MediaAsset[] = mediaTitles.map(([title, type, region, tags, credit, caption], index) => ({
   id: `med-${String(index + 1).padStart(2, "0")}`,
-  title, type, region, tags, credit, date: `${String((index % 12) + 1).padStart(2, "0")} ${2026 - (index % 3)}`, hue: ["#175a77", "#0b385b", "#397287", "#194b63", "#5a8190"][index % 5], caption,
+  title, type, region, tags, credit, date: `${String((index % 12) + 1).padStart(2, "0")} ${2026 - (index % 3)}`, hue: ["#175a77", "#0b385b", "#397287", "#194b63", "#5a8190"][index % 5], caption, image: mediaImages[index % mediaImages.length],
 }));
 
 export const learningTopics: LearningTopic[] = [

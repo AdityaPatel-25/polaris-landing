@@ -20,12 +20,12 @@ import {
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
+import { NorthStarMark } from "@/components/NorthStarMark";
 
 const heroImage = "/manus-storage/polaris-hero-earth_e6b6028e.jpg";
 const arcticImage = "/manus-storage/polaris-arctic_5aabdf27.jpg";
 const antarcticaImage = "/manus-storage/polaris-antarctica_6e927572.jpg";
 const mapImage = "/manus-storage/polaris-expedition-map_a222e81c.jpg";
-const logoImage = "/manus-storage/polaris-logo_7787b873.png";
 
 const navigation = [
   ["Explore", "#explore"],
@@ -118,7 +118,7 @@ export default function Home() {
     <div className="site-shell">
       <header className={`site-header ${scrolled ? "site-header--scrolled" : ""}`}>
         <a href="#top" className="brand" aria-label="POLARIS home">
-          <img src={logoImage} alt="" className="brand-mark" />
+          <NorthStarMark className="brand-mark" />
           <span>POLARIS</span>
         </a>
 
@@ -240,7 +240,7 @@ export default function Home() {
             </div>
             <p>Begin with the region, then follow the evidence across fieldwork, imagery, publication and explanation.</p>
           </div>
-          <div className="light-coordinate light-coordinate--poles"><img src={logoImage} alt="" /> GRID / POLAR LATITUDES / 66° 33′ / 90°</div>
+          <div className="light-coordinate light-coordinate--poles"><NorthStarMark /> GRID / POLAR LATITUDES / 66° 33′ / 90°</div>
 
           <div className="pole-spreads">
             <button
@@ -299,7 +299,7 @@ export default function Home() {
               <p className="eyebrow eyebrow--dark"><Sparkles size={14} /> Selected evidence</p>
               <h2 id="research-title">Featured research.</h2>
             </div>
-            <div className="research-heading-side"><span className="record-seal"><img src={logoImage} alt="" /> ARC / 03 RECORDS</span><a href="#research" onClick={(event) => { event.preventDefault(); notify("Research library"); }} className="editorial-link">Trace the archive <ArrowRight size={17} /></a></div>
+            <div className="research-heading-side"><span className="record-seal"><NorthStarMark /> ARC / 03 RECORDS</span><a href="#research" onClick={(event) => { event.preventDefault(); notify("Research library"); }} className="editorial-link">Trace the archive <ArrowRight size={17} /></a></div>
           </div>
           <div className="research-list">
             {research.map((item, index) => (
@@ -362,7 +362,7 @@ export default function Home() {
               <p className="eyebrow eyebrow--dark"><BookOpen size={14} /> Science outreach</p>
               <h2 id="learn-title">Science, explained<br />for everyone.</h2>
               <a href="#learn" onClick={(event) => { event.preventDefault(); notify("Learning pathway"); }} className="primary-action primary-action--dark">Start learning <ArrowRight size={18} /></a>
-              <p className="learn-coordinate"><img src={logoImage} alt="" /> FIELD NOTE / 03 ENTRY PATHWAYS / OPEN ACCESS</p>
+              <p className="learn-coordinate"><NorthStarMark /> FIELD NOTE / 03 ENTRY PATHWAYS / OPEN ACCESS</p>
             </div>
             <div className="learning-topics">
               {[
@@ -382,13 +382,13 @@ export default function Home() {
             <p className="eyebrow"><Radio size={14} /> Open a clearer horizon</p>
             <h2>The poles are changing.<br /><em>Understanding</em> them starts here.</h2>
             <a className="closing-action" href="/choose">Enter POLARIS <ArrowRight size={19} /></a>
-            <p className="closing-coordinate"><img src={logoImage} alt="" /> NORTH STAR LOCK / POLARIS NETWORK / CONTINUE THE TRACE</p>
+            <p className="closing-coordinate"><NorthStarMark /> NORTH STAR LOCK / POLARIS NETWORK / CONTINUE THE TRACE</p>
           </div>
         </section>
       </main>
 
       <footer className="site-footer">
-        <div className="footer-brand"><img src={logoImage} alt="" /><div><b>POLARIS</b><span>One Gateway to Polar Science</span></div></div>
+        <div className="footer-brand"><NorthStarMark /><div><b>POLARIS</b><span>One Gateway to Polar Science</span></div></div>
         <div className="footer-links">
           {navigation.slice(1).map(([label, href]) => <a href={href} key={label}>{label}</a>)}
           <button onClick={() => notify("About POLARIS")}>About</button>
