@@ -140,3 +140,12 @@
 - [x] Replace the fade with a dark, image-led polar hover state and readable text.
 - [x] Verify hover contrast at desktop and mobile widths, then run the production build.
 - [x] Save and deliver the research-card hover correction.
+
+## Researcher Portal Scientific Workspace Redesign
+
+- [x] Audit all Researcher Portal routes, interactions, and remaining white or near-white surfaces.
+- [x] Establish a dark, data-oriented research-workspace visual system across the shared portal shell and dashboard.
+- [x] Refine research management, research discovery, expeditions, and publication-status views.
+- [x] Rebuild the submission wizard and file-upload journey as a polished scientific intake workflow.
+- [x] Validate the redesigned Researcher Portal at desktop and mobile widths, including the production build.
+- [x] Save and deliver the completed Researcher Portal redesign checkpoint.

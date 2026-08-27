@@ -26,6 +26,7 @@
 @import "./main-hero-refresh.css";
 @import "./signal-type-scale.css";
 @import "./all-dark-landing.css";
+@import "./researcher-workspace.css";
 
 @custom-variant dark (&:is(.dark *));
 
