@@ -18,7 +18,7 @@ import {
   Sparkles,
   X,
 } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
 import { NorthStarMark } from "@/components/NorthStarMark";
 
@@ -73,22 +73,41 @@ const expeditions = [
 
 function AnimatedNumber({ value }: { value: number }) {
   const [display, setDisplay] = useState(0);
+  const [started, setStarted] = useState(false);
+  const counterRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
+    const node = counterRef.current;
+    if (!node || started) return;
+    const observer = new IntersectionObserver(([entry]) => {
+      if (!entry.isIntersecting) return;
+      setStarted(true);
+      observer.disconnect();
+    }, { threshold: 0.45 });
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [started]);
+
+  useEffect(() => {
+    if (!started) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setDisplay(value);
+      return;
+    }
     let frame = 0;
-    const started = performance.now();
-    const duration = 1450;
+    const startedAt = performance.now();
+    const duration = 760;
     const tick = (now: number) => {
-      const progress = Math.min((now - started) / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 4);
+      const progress = Math.min((now - startedAt) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
       setDisplay(Math.round(value * eased));
       if (progress < 1) frame = requestAnimationFrame(tick);
     };
     frame = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(frame);
-  }, [value]);
+  }, [started, value]);
 
-  return <>{new Intl.NumberFormat("en-US").format(display)}</>;
+  return <span ref={counterRef}>{new Intl.NumberFormat("en-US").format(display)}</span>;
 }
 
 function NavLink({ href, children, onSelect }: { href: string; children: string; onSelect?: () => void }) {

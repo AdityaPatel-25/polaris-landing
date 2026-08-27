@@ -99,3 +99,10 @@
 - [x] Force a cache-safe, unmistakably different hero image reference for the main landing page.
 - [x] Verify the corrected hero in preview and production build.
 - [x] Save and deliver the corrected hero checkpoint.
+
+## Rapid Platform-Signal Counters
+
+- [x] Define a rapid zero-to-value count-up sequence that starts only when the signal band enters view.
+- [x] Implement the viewport-triggered count-up animation for all four platform statistics.
+- [x] Verify the counter behavior and production build.
+- [x] Save and deliver the animated statistic checkpoint.
