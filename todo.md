@@ -133,3 +133,10 @@
 - [x] Apply the lighter surface palette without reintroducing white backgrounds.
 - [x] Verify contrast at desktop and mobile widths, then run the production build.
 - [x] Save and deliver the lighter polar-slate checkpoint.
+
+## Research Card Hover Contrast
+
+- [x] Locate the Featured research hover treatment responsible for the white fade.
+- [x] Replace the fade with a dark, image-led polar hover state and readable text.
+- [x] Verify hover contrast at desktop and mobile widths, then run the production build.
+- [x] Save and deliver the research-card hover correction.
