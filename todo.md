@@ -179,3 +179,10 @@
 - [x] Verify Researcher submission to pending review, Admin approval, published status, and Explorer discovery using local state.
 - [x] Review the refined Admin Portal at desktop and mobile widths, then run the production build.
 - [x] Save and deliver the Admin Portal command-center checkpoint.
+
+## Admin Clearance Queue Readability
+
+- [x] Inspect the current clearance-queue hierarchy and crowded row layout.
+- [x] Increase heading, request-row, role-label, and approval-action spacing for clearer scanning.
+- [x] Verify readability at desktop and mobile widths, then run the production build.
+- [x] Save and deliver the clearance-queue readability refinement.

@@ -28,6 +28,7 @@
 @import "./all-dark-landing.css";
 @import "./researcher-workspace.css";
 @import "./admin-command-center.css";
+@import "./admin-clearance-queue.css";
 
 @custom-variant dark (&:is(.dark *));
 
