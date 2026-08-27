@@ -80,3 +80,6 @@ The wordmark is a wide, technical **POLARIS** lockup with carefully spaced geome
 - Role selection is expressed as an instrument mode—each choice is numbered, factual, and part of the same polar observation workflow.
 - Access entry uses factual **access mode** and credential language rather than generic workspace language; every polar image includes a compact observation state, coordinate, or verified-evidence marker without decorative clutter.
 - The access-page visual field is deliberately free of decorative orbit lines: the slow moving ice image, one coordinate anchor, and a compact evidence readout carry the observation story.
+- The public product narrative begins with the operational problem—fragmented polar evidence across orbit, fieldwork, research, and outreach—then proves POLARIS through a visible governed path to Explorer discovery.
+- The wide technical POLARIS lockup and cyan north-star aperture appear together at key navigation and archive-entry moments; the aperture is treated as an evidence or coordinate signal, never arbitrary decoration.
+- Lower landing modules reinforce a mission-journal grammar through accession labels, field-note rules, route annotations, and state markers. Aurora Cyan remains reserved for routes, verified evidence, active states, and calls to action.

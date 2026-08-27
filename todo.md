@@ -186,3 +186,12 @@
 - [x] Increase heading, request-row, role-label, and approval-action spacing for clearer scanning.
 - [x] Verify readability at desktop and mobile widths, then run the production build.
 - [x] Save and deliver the clearance-queue readability refinement.
+
+## SIH Judging-Panel Audit and Proof Refinement
+
+- [x] Audit the landing, access, Explorer, Researcher, and Admin experiences against a three-minute SIH judging rubric.
+- [x] Document candid judging findings and identify only the highest-impact fixes.
+- [x] Strengthen the public problem statement and end-to-end solution proof.
+- [x] Add visible cross-role proof cues for researcher submission, Admin review, publication, and Explorer discovery.
+- [x] Validate the critical journey and production build after implementation.
+- [x] Save and deliver the completed SIH judging-panel improvements with the candid audit.

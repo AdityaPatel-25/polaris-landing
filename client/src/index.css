@@ -29,6 +29,7 @@
 @import "./researcher-workspace.css";
 @import "./admin-command-center.css";
 @import "./admin-clearance-queue.css";
+@import "./sih-proof-refinement.css";
 
 @custom-variant dark (&:is(.dark *));
 

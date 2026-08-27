@@ -16,10 +16,12 @@ const accessRoles: Array<{ id: PortalRole; label: string; index: string; heading
 ];
 
 export default function AccessGateway() {
-  const [, navigate] = useLocation();
+  const [location, navigate] = useLocation();
   const { signIn, requestAccess } = usePolaris();
-  const [role, setRole] = useState<PortalRole>("Explorer");
-  const [roleChosen, setRoleChosen] = useState(false);
+  const requestedRole = typeof window === "undefined" ? null : new URLSearchParams(window.location.search).get("role");
+  const initialRole: PortalRole = requestedRole === "Researcher" || requestedRole === "Command" ? requestedRole : "Explorer";
+  const [role, setRole] = useState<PortalRole>(initialRole);
+  const [roleChosen, setRoleChosen] = useState(Boolean(requestedRole));
   const [mode, setMode] = useState<"sign-in" | "request">("sign-in");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
