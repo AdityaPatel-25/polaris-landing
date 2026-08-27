@@ -41,3 +41,10 @@
 - [x] Rebuild the access gateway with an animated visual field, an elevated role-login form, and retained Command approval logic.
 - [x] Verify visual quality, interaction affordances, and mobile responsiveness for the revised login page.
 - [x] Save and deliver the completed POLARIS login-page checkpoint.
+
+## Dark Polar-Night Login Refinement
+
+- [x] Define the dark glacier-and-star-field direction without using the supplied watermarked images.
+- [ ] Replace the white login surface with a readable midnight, ice-cyan, and polar-imagery interface.
+- [x] Verify the new dark login composition and controls at desktop and mobile widths, then run the production build.
+- [x] Save and deliver the dark polar-night login checkpoint.
