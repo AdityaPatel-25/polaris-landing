@@ -32,6 +32,7 @@
 @import "./sih-proof-refinement.css";
 @import "./footer-type-refinement.css";
 @import "./explorer-dark-surfaces.css";
+@import "./polar-assistant-live.css";
 
 @custom-variant dark (&:is(.dark *));
 

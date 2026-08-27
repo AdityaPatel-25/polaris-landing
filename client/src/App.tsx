@@ -15,8 +15,8 @@ import AccessGateway from "./pages/AccessGateway";
 import Home from "./pages/Home";
 import { ResearcherRoutes } from "./pages/ResearcherPortal";
 import { UserRoutes } from "./pages/UserPortal";
-
 function Router() {
+  // make sure to consider if you need authentication for certain routes
   return (
     <Switch>
       <Route path="/" component={Home} />

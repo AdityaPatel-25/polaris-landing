@@ -1,0 +1,26 @@
+/* Orbital Editorial chat treatment: a dark scientific conversation instrument with clear waiting, evidence, and follow-up states. */
+body .portal-frame--explorer .assistant-workspace--live { align-items: stretch; gap: 2px; }
+body .portal-frame--explorer .assistant-workspace--live .assistant-prompts { display: flex; flex-direction: column; }
+body .portal-frame--explorer .assistant-workspace--live .assistant-prompts > button:disabled { cursor: wait; opacity: .56; }
+body .portal-frame--explorer .assistant-status { border-top: 1px solid rgba(163, 213, 220, .24); display: grid; gap: 5px; margin-top: auto; padding-top: 15px; }
+body .portal-frame--explorer .assistant-status span { color: #82abb5; font-family: "Space Grotesk", sans-serif; font-size: 7px; letter-spacing: .11em; }
+body .portal-frame--explorer .assistant-status b { color: #84eff5; font-family: "Space Grotesk", sans-serif; font-size: 8px; font-weight: 500; letter-spacing: .08em; }
+body .portal-frame--explorer .polar-assistant-chat { background: #071f35; border: 0; border-top: 3px solid #84eff5; border-radius: 0; box-shadow: none; color: #e5f6f7; }
+body .portal-frame--explorer .polar-assistant-chat [class~="bg-muted"], body .portal-frame--explorer .polar-assistant-chat [class~="bg-card"] { background: #0d354d; color: #dbf0f2; }
+body .portal-frame--explorer .polar-assistant-chat [class~="bg-primary"] { background: #84eff5; color: #062b40; }
+body .portal-frame--explorer .polar-assistant-chat [class~="bg-secondary"] { background: #153c53; }
+body .portal-frame--explorer .polar-assistant-chat [class~="border-t"] { border-color: rgba(163, 213, 220, .24); }
+body .portal-frame--explorer .polar-assistant-chat textarea { background: #09283e; border-color: rgba(154, 210, 219, .34); color: #eafafb; }
+body .portal-frame--explorer .polar-assistant-chat textarea::placeholder { color: #8aafb9; }
+body .portal-frame--explorer .polar-assistant-chat button { border-radius: 0; }
+body .portal-frame--explorer .polar-assistant-chat .prose { color: #d9edf0; }
+body .portal-frame--explorer .polar-assistant-chat .prose strong, body .portal-frame--explorer .polar-assistant-chat .prose h1, body .portal-frame--explorer .polar-assistant-chat .prose h2, body .portal-frame--explorer .polar-assistant-chat .prose h3 { color: #f1fdfd; }
+body .portal-frame--explorer .polar-assistant-chat .prose code { background: #0b2940; color: #9af2f5; }
+body .portal-frame--explorer .assistant-evidence-routes { border-top: 1px solid rgba(153, 211, 220, .26); margin-top: 50px; padding-top: 17px; }
+body .portal-frame--explorer .assistant-evidence-routes > p { color: #94c3cb; font-family: "Space Grotesk", sans-serif; font-size: 8px; letter-spacing: .13em; margin: 0 0 11px; }
+body .portal-frame--explorer .assistant-evidence-routes > div { display: grid; gap: 2px; grid-template-columns: repeat(3, 1fr); }
+body .portal-frame--explorer .assistant-evidence-routes button { align-items: center; background: #0c3048; border: 0; color: #84eff5; display: grid; gap: 10px; grid-template-columns: auto 1fr auto; min-height: 78px; padding: 13px; text-align: left; }
+body .portal-frame--explorer .assistant-evidence-routes button:hover { background: #12435c; }
+body .portal-frame--explorer .assistant-evidence-routes span { color: #effcfd; display: grid; font-family: "Space Grotesk", sans-serif; font-size: 10px; gap: 4px; }
+body .portal-frame--explorer .assistant-evidence-routes small { color: #96bfc7; font-family: "DM Sans", sans-serif; font-size: 9px; }
+@media (max-width: 760px) { body .portal-frame--explorer .assistant-workspace--live { margin-bottom: 0; } body .portal-frame--explorer .polar-assistant-chat { min-height: 540px; } body .portal-frame--explorer .assistant-evidence-routes { margin-top: 35px; } body .portal-frame--explorer .assistant-evidence-routes > div { grid-template-columns: 1fr; } }

@@ -244,3 +244,14 @@
 - [x] Replace those Explorer surfaces with a readable glacier-slate dark treatment.
 - [x] Verify Explorer desktop/mobile views and run the production build.
 - [x] Save and deliver the Explorer surface refinement.
+
+## Flexible Polar Assistant
+
+- [x] Upgrade the project for secure server-side AI and select an available model.
+- [x] Resolve the post-upgrade dependency and merge conflicts, then restore a passing development build.
+- [x] Add a Polar Assistant procedure with scientific grounding and responsible-answer boundaries.
+- [x] Replace fixed assistant replies with flexible multi-turn chat, loading feedback, and useful evidence links.
+- [x] Resolve the Polar Assistant client message-role typing error introduced during integration.
+- [x] Verify arbitrary-question responses, error handling, mobile layout, and the production build.
+- [x] Confirm a live non-polar question receives a rendered answer in the approved Explorer Portal chat.
+- [x] Save and deliver the smarter Polar Assistant.
