@@ -223,3 +223,10 @@
 - [x] Apply any remaining footer text-size adjustment needed to match the requested visual intent.
 - [x] Verify footer readability at desktop and mobile widths, then run the production build.
 - [x] Save and deliver the verified footer refinement.
+
+## Visible Footer Type-Scale Correction
+
+- [x] Inspect the current footer scale against the requested larger visual treatment.
+- [x] Set the POLARIS lockup, descriptor, and footer navigation to a restrained medium scale.
+- [x] Verify the balanced medium footer at desktop and mobile widths, then run the production build.
+- [x] Save and deliver the balanced footer scale.
