@@ -195,3 +195,10 @@
 - [x] Add visible cross-role proof cues for researcher submission, Admin review, publication, and Explorer discovery.
 - [x] Validate the critical journey and production build after implementation.
 - [x] Save and deliver the completed SIH judging-panel improvements with the candid audit.
+
+## Simplified Landing Hero Manifest
+
+- [x] Remove the hero platform-label and four-topic manifest targeted by the user.
+- [x] Rebalance the simplified hero hierarchy without changing the polar visual or primary message.
+- [x] Verify the updated hero at desktop and mobile widths, then run the production build.
+- [x] Save and deliver the simplified hero checkpoint.

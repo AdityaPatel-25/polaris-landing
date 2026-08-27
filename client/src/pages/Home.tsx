@@ -194,8 +194,6 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.72, ease: [0.23, 1, 0.32, 1] }}
             >
-              <p className="eyebrow"><Satellite size={14} /> Polar Earth observation platform</p>
-              <div className="hero-manifest" aria-label="POLARIS platform scope"><span>Polar science</span><span>Space technology</span><span>Research</span><span>Exploration</span></div>
               <h1 id="hero-title">Observe the poles.<br /><em>Connect</em> the evidence.</h1>
               <p className="hero-lede">
                 POLARIS turns scattered satellite observations, expedition records, research submissions and public learning material into one reviewed polar-evidence system.
