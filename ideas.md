@@ -83,3 +83,5 @@ The wordmark is a wide, technical **POLARIS** lockup with carefully spaced geome
 - The public product narrative begins with the operational problem—fragmented polar evidence across orbit, fieldwork, research, and outreach—then proves POLARIS through a visible governed path to Explorer discovery.
 - The wide technical POLARIS lockup and cyan north-star aperture appear together at key navigation and archive-entry moments; the aperture is treated as an evidence or coordinate signal, never arbitrary decoration.
 - Lower landing modules reinforce a mission-journal grammar through accession labels, field-note rules, route annotations, and state markers. Aurora Cyan remains reserved for routes, verified evidence, active states, and calls to action.
+- Every authorization-required route places the POLARIS lockup and cyan north-star aperture first, then provides an access mode, coordinate field, and verification status as a concise credential ledger.
+- Authorization microcopy names the governed evidence route and clearance state directly; it never refers to a generic workspace.

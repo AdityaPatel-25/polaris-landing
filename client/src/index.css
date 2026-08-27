@@ -31,6 +31,7 @@
 @import "./admin-clearance-queue.css";
 @import "./sih-proof-refinement.css";
 @import "./footer-type-refinement.css";
+@import "./explorer-dark-surfaces.css";
 
 @custom-variant dark (&:is(.dark *));
 

@@ -1,0 +1,184 @@
+/* Orbital Editorial Explorer surface system: layered midnight and glacier-slate planes keep scientific reading immersive, calm, and legible without white primary surfaces. */
+body .portal-frame--explorer { background: #071c2f; color: #d7ecef; }
+body .portal-frame--explorer .portal-stage,
+body .portal-frame--explorer .portal-content { background: #081f33; color: #d7ecef; }
+body .portal-frame--explorer .portal-content::before { background: linear-gradient(180deg, rgba(52, 123, 143, .17), transparent); }
+
+body .portal-frame--explorer .portal-welcome h1,
+body .portal-frame--explorer .repository-hero h1,
+body .portal-frame--explorer .map-page-heading h1,
+body .portal-frame--explorer .media-page-heading h1,
+body .portal-frame--explorer .learn-heading h1,
+body .portal-frame--explorer .saved-heading h1,
+body .portal-frame--explorer .detail-hero h1,
+body .portal-frame--explorer .section-bar h2,
+body .portal-frame--explorer .atlas-results > header h2,
+body .portal-frame--explorer .atlas-related > header h2,
+body .portal-frame--explorer .atlas-route-register h2,
+body .portal-frame--explorer .reading-body h2,
+body .portal-frame--explorer .topic-reader h2 { color: #ecfbfc; }
+body .portal-frame--explorer .portal-welcome > div > p:last-child,
+body .portal-frame--explorer .repository-hero > p,
+body .portal-frame--explorer .map-page-heading > p,
+body .portal-frame--explorer .media-page-heading > p,
+body .portal-frame--explorer .learn-heading > p,
+body .portal-frame--explorer .saved-heading > p,
+body .portal-frame--explorer .date-readout span,
+body .portal-frame--explorer .date-readout b,
+body .portal-frame--explorer .section-bar p,
+body .portal-frame--explorer .saved-group > p,
+body .portal-frame--explorer .results-meta,
+body .portal-frame--explorer .atlas-results > header p,
+body .portal-frame--explorer .atlas-related > header p,
+body .portal-frame--explorer .atlas-route-register header p,
+body .portal-frame--explorer .atlas-route-register header > span { color: #9cc2cb; }
+body .portal-frame--explorer .inline-route,
+body .portal-frame--explorer .atlas-related > header button { color: #8ceef4; }
+
+body .portal-frame--explorer .continue-route { background: #0a2b43; color: #e5f7f8; }
+body .portal-frame--explorer .continue-route:nth-child(2) { background: #0b3049; }
+body .portal-frame--explorer .continue-route:nth-child(3) { background: #10364e; }
+body .portal-frame--explorer .continue-route:nth-child(4) { background: #0a2940; }
+body .portal-frame--explorer .continue-route:hover { background: #12435c; }
+body .portal-frame--explorer .continue-route > span,
+body .portal-frame--explorer .continue-route p { color: #9cc2cb; }
+body .portal-frame--explorer .continue-route h3 { color: #f0fcfd; }
+body .portal-frame--explorer .resource-card,
+body .portal-frame--explorer .atlas-record { background: #0a2940; border-color: rgba(151, 211, 220, .18); }
+body .portal-frame--explorer .resource-card:nth-child(2n),
+body .portal-frame--explorer .atlas-record:nth-child(2n) { background: #0d3048; }
+body .portal-frame--explorer .atlas-record:nth-child(3n) { background: #0d354c; }
+body .portal-frame--explorer .resource-card:hover,
+body .portal-frame--explorer .atlas-record:hover { background: #123e57; }
+body .portal-frame--explorer .resource-card-top,
+body .portal-frame--explorer .atlas-record-band,
+body .portal-frame--explorer .atlas-record-band i,
+body .portal-frame--explorer .resource-description,
+body .portal-frame--explorer .atlas-record-body > span,
+body .portal-frame--explorer .tag-row span,
+body .portal-frame--explorer .atlas-record-tags i,
+body .portal-frame--explorer .resource-card-foot span,
+body .portal-frame--explorer .resource-card-foot small,
+body .portal-frame--explorer .atlas-record footer span { color: #a3c4cc; }
+body .portal-frame--explorer .resource-card h3,
+body .portal-frame--explorer .atlas-record-body h2,
+body .portal-frame--explorer .atlas-record footer b { color: #f0fcfd; }
+body .portal-frame--explorer .resource-card-foot,
+body .portal-frame--explorer .atlas-record-tags { border-color: rgba(154, 208, 216, .2); }
+body .portal-frame--explorer .record-tag,
+body .portal-frame--explorer .atlas-save,
+body .portal-frame--explorer .reading-share { border-color: rgba(140, 211, 220, .48); color: #afe9ed; }
+body .portal-frame--explorer .save-button { color: #b5d5dc; }
+
+body .portal-frame--explorer .repository-controls,
+body .portal-frame--explorer .atlas-search-surface,
+body .portal-frame--explorer .assistant-prompts,
+body .portal-frame--explorer .atlas-map-control,
+body .portal-frame--explorer .topic-reader { background: #0b3048; border-color: rgba(151, 211, 220, .26); }
+body .portal-frame--explorer .repository-search,
+body .portal-frame--explorer .atlas-search,
+body .portal-frame--explorer .assistant-prompts > div { background: #071e31; border-color: rgba(151, 211, 220, .37); }
+body .portal-frame--explorer .repository-search input,
+body .portal-frame--explorer .atlas-search input,
+body .portal-frame--explorer .assistant-prompts input { color: #e9f9fa; }
+body .portal-frame--explorer .repository-search input::placeholder,
+body .portal-frame--explorer .atlas-search input::placeholder,
+body .portal-frame--explorer .assistant-prompts input::placeholder { color: #82aab6; }
+body .portal-frame--explorer .filter-line > span,
+body .portal-frame--explorer .atlas-filter-groups > div > span,
+body .portal-frame--explorer .atlas-search-header p,
+body .portal-frame--explorer .atlas-search-header span,
+body .portal-frame--explorer .atlas-map-control > p,
+body .portal-frame--explorer .atlas-map-control > div > span,
+body .portal-frame--explorer .assistant-prompts > p { color: #a4cbd3; }
+body .portal-frame--explorer .filter-pill,
+body .portal-frame--explorer .atlas-filter,
+body .portal-frame--explorer .atlas-map-filter { border-color: rgba(143, 207, 216, .38); color: #c2e5e9; }
+body .portal-frame--explorer .filter-pill:hover,
+body .portal-frame--explorer .atlas-filter:hover,
+body .portal-frame--explorer .atlas-map-filter:hover { background: rgba(132, 239, 245, .1); color: #9cf4f7; }
+body .portal-frame--explorer .atlas-results select,
+body .portal-frame--explorer .atlas-results > header label,
+body .portal-frame--explorer .atlas-map-filter i,
+body .portal-frame--explorer .atlas-media-filters > div > span { color: #a4cbd3; }
+body .portal-frame--explorer .atlas-record-body > p,
+body .portal-frame--explorer .atlas-back { color: #8ceef4; }
+body .portal-frame--explorer .assistant-prompts > button { border-color: rgba(163, 213, 220, .2); color: #d2e9ec; }
+
+body .portal-frame--explorer .reading-body section,
+body .portal-frame--explorer .detail-hero,
+body .portal-frame--explorer .detail-reading section,
+body .portal-frame--explorer .linked-expeditions,
+body .portal-frame--explorer .atlas-route-register header,
+body .portal-frame--explorer .atlas-route-row,
+body .portal-frame--explorer .map-route-list > button,
+body .portal-frame--explorer .topic-index,
+body .portal-frame--explorer .topic-index-row,
+body .portal-frame--explorer .atlas-media-hero,
+body .portal-frame--explorer .atlas-media-filters { border-color: rgba(151, 211, 220, .25); }
+body .portal-frame--explorer .reading-body section > p,
+body .portal-frame--explorer .reading-columns,
+body .portal-frame--explorer .reading-body ul,
+body .portal-frame--explorer .detail-authors,
+body .portal-frame--explorer .detail-authors span,
+body .portal-frame--explorer .detail-reading section > p:not(.reading-kicker),
+body .portal-frame--explorer .detail-reading ul,
+body .portal-frame--explorer .detail-facts span,
+body .portal-frame--explorer .atlas-route-row > span,
+body .portal-frame--explorer .atlas-route-row small,
+body .portal-frame--explorer .atlas-route-row em,
+body .portal-frame--explorer .topic-index > p,
+body .portal-frame--explorer .topic-index-row span,
+body .portal-frame--explorer .topic-explanation,
+body .portal-frame--explorer .fact-box span { color: #a9cbd2; }
+body .portal-frame--explorer .detail-facts b,
+body .portal-frame--explorer .atlas-route-row b,
+body .portal-frame--explorer .topic-index-row b { color: #e8f9fa; }
+body .portal-frame--explorer .atlas-route-row:hover,
+body .portal-frame--explorer .atlas-route-row--active { background: #123c53; }
+
+body .portal-frame--explorer .reading-facts,
+body .portal-frame--explorer .atlas-empty,
+body .portal-frame--explorer .empty-state { background: #0d354d; color: #d6ecf0; }
+body .portal-frame--explorer .reading-facts span { border-color: rgba(155, 211, 218, .23); color: #a9ccd3; }
+body .portal-frame--explorer .reading-facts b,
+body .portal-frame--explorer .atlas-empty h2,
+body .portal-frame--explorer .empty-state h2 { color: #effcfd; }
+body .portal-frame--explorer .atlas-empty p,
+body .portal-frame--explorer .empty-state p { color: #b1d0d6; }
+
+body .portal-frame--explorer .atlas-map-control { border-color: rgba(154, 211, 219, .25); }
+body .portal-frame--explorer .atlas-map-control > p,
+body .portal-frame--explorer .atlas-map-control > div { border-color: rgba(154, 211, 219, .23); }
+body .portal-frame--explorer .atlas-map-control footer span { color: #a9cbd2; }
+body .portal-frame--explorer .expedition-panel,
+body .portal-frame--explorer .lightbox-card { background: #0b3149; color: #e5f6f8; }
+body .portal-frame--explorer .expedition-panel h2,
+body .portal-frame--explorer .lightbox-card h2 { color: #f0fcfd; }
+body .portal-frame--explorer .panel-location,
+body .portal-frame--explorer .panel-location small,
+body .portal-frame--explorer .panel-objective,
+body .portal-frame--explorer .expedition-panel dt,
+body .portal-frame--explorer .expedition-panel dd,
+body .portal-frame--explorer .lightbox-card > div:last-child p,
+body .portal-frame--explorer .lightbox-card > div:last-child > span,
+body .portal-frame--explorer .lightbox-card small { color: #a9cbd2; }
+body .portal-frame--explorer .panel-objective { border-color: rgba(153, 210, 218, .23); }
+body .portal-frame--explorer .panel-actions button + button { border-color: rgba(146, 207, 216, .43); color: #b9e3e7; }
+
+body .portal-frame--explorer .topic-reader::before { border-color: rgba(132, 239, 245, .17); }
+body .portal-frame--explorer .topic-reader-top p,
+body .portal-frame--explorer .fact-box p { color: #9ccad2; }
+body .portal-frame--explorer .topic-links button { background: #09263d; border-color: rgba(151, 211, 220, .34); color: #c7e5e8; }
+body .portal-frame--explorer .topic-links small { color: #91b8c1; }
+body .portal-frame--explorer .assistant-answer { background: #0a2940; color: #d8edf0; }
+body .portal-frame--explorer .assistant-answer > p,
+body .portal-frame--explorer .assistant-answer h2 { color: #effcfd; }
+body .portal-frame--explorer .answer-copy { border-color: #84eff5; color: #b4d4d9; }
+body .portal-frame--explorer .answer-links button { background: #0e374f; color: #c9e6e9; }
+body .portal-frame--explorer .answer-links button:hover { background: #154861; }
+body .portal-frame--explorer .answer-links button b { color: #ecfbfc; }
+
+@media (max-width: 760px) {
+  body .portal-frame--explorer .portal-content { background: #081f33; }
+}

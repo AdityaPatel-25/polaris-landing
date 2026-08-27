@@ -237,3 +237,10 @@
 - [x] Apply a higher-specificity medium-scale footer correction that visibly changes the rendered text.
 - [x] Verify the live footer at desktop and mobile widths, then run the production build.
 - [x] Save and deliver the confirmed live footer correction.
+
+## Explorer Portal Dark Surface Refinement
+
+- [x] Audit Explorer Portal routes for white or near-white backgrounds and surface overrides.
+- [x] Replace those Explorer surfaces with a readable glacier-slate dark treatment.
+- [x] Verify Explorer desktop/mobile views and run the production build.
+- [x] Save and deliver the Explorer surface refinement.
