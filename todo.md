@@ -230,3 +230,10 @@
 - [x] Set the POLARIS lockup, descriptor, and footer navigation to a restrained medium scale.
 - [x] Verify the balanced medium footer at desktop and mobile widths, then run the production build.
 - [x] Save and deliver the balanced footer scale.
+
+## Live Footer Type-Scale Diagnosis
+
+- [x] Inspect the live footer’s computed typography and identify any overriding rule.
+- [x] Apply a higher-specificity medium-scale footer correction that visibly changes the rendered text.
+- [x] Verify the live footer at desktop and mobile widths, then run the production build.
+- [x] Save and deliver the confirmed live footer correction.
