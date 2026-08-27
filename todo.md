@@ -119,3 +119,17 @@
 - [x] Remove the Access gateway button from the landing-page navigation.
 - [x] Preserve the Sign in route and verify the streamlined navigation in preview and production build.
 - [x] Save and deliver the simplified navigation checkpoint.
+
+## All-Dark Landing-Page Surfaces
+
+- [x] Identify all remaining white or near-white content surfaces on the landing page.
+- [x] Replace the light section treatments with dark polar-night surfaces and readable type.
+- [ ] Verify the darkened landing-page sections at desktop and mobile widths, then run the production build.
+- [ ] Save and deliver the all-dark landing-page checkpoint.
+
+## Lighter Polar-Slate Surface Refinement
+
+- [x] Establish a lighter slate-blue alternative to the near-black landing-page surfaces.
+- [x] Apply the lighter surface palette without reintroducing white backgrounds.
+- [x] Verify contrast at desktop and mobile widths, then run the production build.
+- [x] Save and deliver the lighter polar-slate checkpoint.
