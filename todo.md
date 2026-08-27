@@ -63,3 +63,19 @@
 - [x] Remove line overlays and apply slow, professional polar-image motion to the login visual panel.
 - [x] Verify the cleaned login visual at desktop and mobile widths, then run the production build.
 - [x] Save and deliver the simplified moving-image login checkpoint.
+
+## Explorer Portal Immersion
+
+- [x] Audit the Explorer dashboard, repository, research detail, expedition map, media, quiz, and assistant experiences.
+- [x] Rework the Knowledge Repository and research detail route into editorial evidence-led exploration journeys.
+- [ ] Make the Expedition Map an immersive interactive highlight and strengthen the Media Gallery’s scientific visual browsing.
+- [ ] Improve the Quiz and Polar Assistant with exploratory interactions, clear feedback, and refined motion.
+- [ ] Validate all revised Explorer routes at desktop and mobile widths, then run the production build.
+- [ ] Save and deliver the completed Explorer portal refinement.
+
+## Login Visual Refresh
+
+- [x] Select a distinct non-repeating polar visual for the login page’s right-side panel.
+- [x] Apply slow image movement and a readable dark overlay to the replacement visual.
+- [x] Verify the updated login visual at desktop and mobile widths, then run the production build.
+- [x] Save and deliver the refreshed login visual checkpoint.

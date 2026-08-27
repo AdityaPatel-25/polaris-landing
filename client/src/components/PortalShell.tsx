@@ -29,7 +29,7 @@ export function PortalShell({ role, roleLabel, nav, children, action }: PortalSh
   const activeItem = nav.find(isActive)?.label ?? "Overview";
 
   return (
-    <div className={`portal-frame ${collapsed ? "portal-frame--collapsed" : ""}`}>
+    <div className={`portal-frame portal-frame--${role.toLowerCase()} ${collapsed ? "portal-frame--collapsed" : ""}`}>
       <aside className={`portal-rail ${mobileOpen ? "portal-rail--open" : ""}`}>
         <div className="rail-top">
           <Link href="/" className="rail-brand" aria-label="POLARIS landing page"><NorthStarMark /><span>POLARIS</span></Link>

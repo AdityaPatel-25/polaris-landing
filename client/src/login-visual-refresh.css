@@ -1,0 +1,29 @@
+/* Login visual refresh: a single, cinematic iceberg observation replaces role-specific imagery while motion remains slow, quiet, and readable. */
+.ice-login-page .ice-login-visual {
+  background-image:
+    linear-gradient(104deg, rgba(1, 15, 28, .92) 0%, rgba(2, 24, 39, .52) 47%, rgba(2, 24, 39, .66) 100%),
+    url("/manus-storage/polaris-login-iceberg-night_bd57a6a8.jpg") !important;
+  background-position: center, 50% 50%;
+  background-size: cover, 112% auto;
+}
+
+.ice-login-page .ice-login-visual::before {
+  background:
+    linear-gradient(0deg, rgba(1, 14, 28, .90) 0%, rgba(1, 17, 30, .18) 58%, rgba(1, 17, 30, .40) 100%),
+    radial-gradient(circle at 78% 29%, rgba(130, 235, 243, .14), transparent 24%);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .ice-login-page .ice-login-visual {
+    animation: iceberg-observation-drift 36s cubic-bezier(.42, 0, .18, 1) infinite alternate;
+  }
+}
+
+@keyframes iceberg-observation-drift {
+  from { background-position: center, 48% 51%; }
+  to { background-position: center, 54% 46%; }
+}
+
+@media (max-width: 850px) {
+  .ice-login-page .ice-login-visual { background-size: cover, 120% auto; }
+}
