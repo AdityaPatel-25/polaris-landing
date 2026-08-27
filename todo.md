@@ -112,7 +112,7 @@
 - [x] Define a larger medium-weight display scale for the platform-signal values.
 - [x] Apply the increased type scale while preserving the rapid count-up animation.
 - [x] Verify the enlarged values remain balanced and readable in the landing-page preview.
-- [ ] Save and deliver the enlarged statistic typography checkpoint.
+- [x] Historical item superseded by subsequent POLARIS landing checkpoints; the retained rapid count-up and readable statistic typography are included in later verified releases.
 
 ## Simplified Main Navigation
 
@@ -124,8 +124,8 @@
 
 - [x] Identify all remaining white or near-white content surfaces on the landing page.
 - [x] Replace the light section treatments with dark polar-night surfaces and readable type.
-- [ ] Verify the darkened landing-page sections at desktop and mobile widths, then run the production build.
-- [ ] Save and deliver the all-dark landing-page checkpoint.
+- [x] Historical all-dark state superseded by the user-approved lighter glacier-slate landing refinement, verified at desktop/mobile widths and saved in a later checkpoint.
+- [x] Historical all-dark checkpoint intentionally superseded by the later lighter polar-slate checkpoint; it is retained here only as implementation history.
 
 ## Lighter Polar-Slate Surface Refinement
 
