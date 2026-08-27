@@ -413,7 +413,6 @@ export default function Home() {
           <button onClick={() => notify("About POLARIS")}>About</button>
           <button onClick={() => notify("Contact")}>Contact</button>
         </div>
-        <p>Smart India Hackathon 2026</p>
       </footer>
     </div>
   );

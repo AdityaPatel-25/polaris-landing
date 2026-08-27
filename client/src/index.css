@@ -30,6 +30,7 @@
 @import "./admin-command-center.css";
 @import "./admin-clearance-queue.css";
 @import "./sih-proof-refinement.css";
+@import "./footer-type-refinement.css";
 
 @custom-variant dark (&:is(.dark *));
 

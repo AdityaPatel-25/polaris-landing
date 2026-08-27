@@ -202,3 +202,10 @@
 - [x] Rebalance the simplified hero hierarchy without changing the polar visual or primary message.
 - [x] Verify the updated hero at desktop and mobile widths, then run the production build.
 - [x] Save and deliver the simplified hero checkpoint.
+
+## Footer Event-Reference Removal and Type Scale
+
+- [x] Remove the Smart India Hackathon footer reference.
+- [x] Increase remaining footer type sizes while preserving the editorial hierarchy.
+- [x] Verify footer balance at desktop and mobile widths, then run the production build.
+- [x] Save and deliver the refined footer checkpoint.
