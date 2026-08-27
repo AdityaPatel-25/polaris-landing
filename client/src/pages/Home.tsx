@@ -4,7 +4,6 @@
  */
 import { motion } from "framer-motion";
 import {
-  AlertTriangle,
   ArrowDown,
   ArrowRight,
   ArrowUpRight,
@@ -198,7 +197,6 @@ export default function Home() {
               <p className="hero-lede">
                 POLARIS turns scattered satellite observations, expedition records, research submissions and public learning material into one reviewed polar-evidence system.
               </p>
-              <p className="hero-problem-line"><AlertTriangle size={15} /><span><b>THE SIH GAP:</b> critical polar evidence exists, but rarely moves from <b>observation</b> to <b>public understanding</b> as one trusted chain.</span></p>
               <div className="hero-actions">
                 <a href="/access" className="primary-action">Enter POLARIS <ArrowRight size={18} /></a>
                 <a href="#proof" className="secondary-action"><Play size={14} fill="currentColor" /> See the evidence path</a>
@@ -291,7 +289,6 @@ export default function Home() {
               <p className="eyebrow"><Orbit size={14} /> Connected knowledge</p>
               <h2 id="knowledge-title">Polar evidence fails when it stays in separate systems.</h2>
               <p>POLARIS creates a moderated chain from a spaceborne signal or field observation to a research record, a verified decision, and an explorer-ready explanation.</p>
-              <div className="proof-gap"><AlertTriangle size={17} /><span><b>What changes:</b> disconnected files and scattered updates become one traceable, role-governed evidence pathway.</span></div>
               <div className="proof-cta-row"><a href="/access?role=Researcher">Contribute evidence <ArrowRight size={15} /></a><a href="/access?role=Explorer">Explore published records <ArrowRight size={15} /></a></div>
             </div>
             <div className="knowledge-path" role="list" aria-label="Knowledge path">

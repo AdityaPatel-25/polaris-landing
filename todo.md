@@ -209,3 +209,17 @@
 - [x] Increase remaining footer type sizes while preserving the editorial hierarchy.
 - [x] Verify footer balance at desktop and mobile widths, then run the production build.
 - [x] Save and deliver the refined footer checkpoint.
+
+## Simplified Landing Narrative Callouts
+
+- [x] Remove the hero SIH-gap callout and the proof-section What changes callout.
+- [x] Rebalance the affected landing-page spacing without changing the remaining evidence path.
+- [x] Verify the simplified landing sections at desktop and mobile widths, then run the production build.
+- [x] Save and deliver the simplified landing narrative checkpoint.
+
+## Footer Type-Size Verification
+
+- [x] Inspect the current footer markup and existing type-scale refinement after the stale visual-editor result.
+- [x] Apply any remaining footer text-size adjustment needed to match the requested visual intent.
+- [x] Verify footer readability at desktop and mobile widths, then run the production build.
+- [x] Save and deliver the verified footer refinement.
