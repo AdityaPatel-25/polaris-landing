@@ -21,6 +21,7 @@ import {
 import { useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
 import { NorthStarMark } from "@/components/NorthStarMark";
+import { LanguageSelector } from "@/components/LanguageSelector";
 
 const heroImage = "/manus-storage/polaris-main-hero-antarctic-orbit_85913902.jpg";
 const arcticImage = "/manus-storage/polaris-arctic_5aabdf27.jpg";
@@ -150,6 +151,7 @@ export default function Home() {
         </nav>
 
         <div className="nav-actions">
+          <LanguageSelector />
           <a className="text-button" href="/access">Sign in</a>
           <button
             className="menu-button"
@@ -168,6 +170,7 @@ export default function Home() {
             </NavLink>
           ))}
           <a className="mobile-signin" href="/access">Sign in to your workspace</a>
+          <LanguageSelector />
         </div>
       </header>
 

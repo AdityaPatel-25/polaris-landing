@@ -7,6 +7,7 @@ import { ChevronLeft, ChevronRight, Compass, Menu, Search, X } from "lucide-reac
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { NorthStarMark } from "@/components/NorthStarMark";
+import { LanguageSelector } from "@/components/LanguageSelector";
 import { usePolaris } from "@/contexts/PolarisContext";
 
 export interface PortalNavItem { label: string; href: string; icon: LucideIcon; }
@@ -48,11 +49,11 @@ export function PortalShell({ role, roleLabel, nav, children, action }: PortalSh
             return <Link href={item.href} className={`portal-nav-link ${active ? "portal-nav-link--active" : ""}`} key={item.href} onClick={() => setMobileOpen(false)}><item.icon size={18} /><span>{item.label}</span>{active && <i />}</Link>;
           })}
         </nav>
-        <div className="rail-footer"><Link href="/access" className="role-switch"><span className="role-switch-dot" /> <span>Switch experience</span></Link><button className="session-exit" onClick={() => { signOut(); navigate("/access"); }}><span>Exit {session?.name ?? "session"}</span></button><p>POLARIS / SIH 2026</p></div>
+        <div className="rail-footer"><LanguageSelector /><Link href="/access" className="role-switch"><span className="role-switch-dot" /> <span>Switch experience</span></Link><button className="session-exit" onClick={() => { signOut(); navigate("/access"); }}><span>Exit {session?.name ?? "session"}</span></button><p>POLARIS / SIH 2026</p></div>
       </aside>
       {mobileOpen && <button className="portal-scrim" aria-label="Close menu" onClick={() => setMobileOpen(false)} />}
       <section className="portal-stage">
-        <header className="portal-header"><button className="mobile-menu-trigger" onClick={() => setMobileOpen(true)} aria-label="Open portal menu"><Menu size={21} /></button><div className="page-indicator"><div className="page-indicator-label"><span>{roleLabel}</span><b>{activeItem}</b></div></div><div className="portal-header-actions">{hasContextualBack && <button type="button" className="portal-context-back" onClick={goBack} aria-label={`Go back from ${activeItem}`}><ChevronLeft size={17} /><span>Back</span></button>}<label className="header-search"><Search size={15} /><input placeholder="Search POLARIS" aria-label="Search POLARIS" onKeyDown={(event) => { if (event.key === "Enter") navigate(`/user/repository?q=${encodeURIComponent(event.currentTarget.value)}`); }} /></label>{action}</div></header>
+        <header className="portal-header"><button className="mobile-menu-trigger" onClick={() => setMobileOpen(true)} aria-label="Open portal menu"><Menu size={21} /></button><div className="page-indicator"><div className="page-indicator-label"><span>{roleLabel}</span><b>{activeItem}</b></div></div><div className="portal-header-actions">{hasContextualBack && <button type="button" className="portal-context-back" onClick={goBack} aria-label={`Go back from ${activeItem}`}><ChevronLeft size={17} /><span>Back</span></button>}<LanguageSelector /><label className="header-search"><Search size={15} /><input placeholder="Search POLARIS" aria-label="Search POLARIS" onKeyDown={(event) => { if (event.key === "Enter") navigate(`/user/repository?q=${encodeURIComponent(event.currentTarget.value)}`); }} /></label>{action}</div></header>
         <main className="portal-content">{children}</main>
       </section>
     </div>

@@ -255,3 +255,17 @@
 - [x] Verify arbitrary-question responses, error handling, mobile layout, and the production build.
 - [x] Confirm a live non-polar question receives a rendered answer in the approved Explorer Portal chat.
 - [x] Save and deliver the smarter Polar Assistant.
+
+## Site-Wide Multilingual Experience
+
+- [x] Establish English and Hindi as the initial POLARIS interface languages and preserve language selection across routes.
+- [x] Add an accessible language selector to public, access, and role-specific portal navigation.
+- [x] Translate the landing page, access controls, and Explorer, Researcher, and Admin interface labels into the shared language system.
+- [x] Reduce the Hindi translation wait by applying independent UI translation batches concurrently.
+- [x] Ensure a partial translation request failure cannot prevent successfully translated interface text from rendering.
+- [x] Consolidate translation requests and add a curated Hindi interface fallback so every route switches reliably.
+- [x] Render curated Hindi labels immediately while longer route content continues translating in the background.
+- [x] Translate long-form route copy in bounded batches that render as each successful response arrives.
+- [x] Remove the unavailable runtime translation dependency and keep language switching deterministic with curated Hindi interface copy.
+- [x] Verify language switching, responsive layouts, and core local access/moderation workflows in both languages.
+- [x] Save and deliver the multilingual POLARIS checkpoint.

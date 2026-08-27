@@ -9,6 +9,7 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { PolarisProvider } from "./contexts/PolarisContext";
+import { LanguageProvider } from "./contexts/LanguageContext";
 import { AccessBarrier } from "./components/AccessBarrier";
 import { AdminRoutes } from "./pages/AdminPortal";
 import AccessGateway from "./pages/AccessGateway";
@@ -40,12 +41,14 @@ function App() {
   return (
     <ErrorBoundary>
       <ThemeProvider defaultTheme="dark">
-        <PolarisProvider>
-          <TooltipProvider>
-            <Toaster richColors position="bottom-right" />
-            <Router />
-          </TooltipProvider>
-        </PolarisProvider>
+        <LanguageProvider>
+          <PolarisProvider>
+            <TooltipProvider>
+              <Toaster richColors position="bottom-right" />
+              <Router />
+            </TooltipProvider>
+          </PolarisProvider>
+        </LanguageProvider>
       </ThemeProvider>
     </ErrorBoundary>
   );

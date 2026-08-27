@@ -11,6 +11,7 @@ const chatMessageSchema = z.object({
 });
 
 export const polarAssistantInput = z.object({
+  language: z.enum(["en", "hi"]).default("en"),
   messages: z.array(chatMessageSchema).min(1).max(MAX_HISTORY_MESSAGES),
 });
 
@@ -25,7 +26,7 @@ You have no live web access, telemetry, private user information, or authority t
 export function buildPolarAssistantMessages(input: PolarAssistantInput): Message[] {
   const history = input.messages.slice(-MAX_HISTORY_MESSAGES);
   return [
-    { role: "system", content: polarAssistantSystemPrompt },
+    { role: "system", content: `${polarAssistantSystemPrompt}\n\nReply in ${input.language === "hi" ? "Hindi written in Devanagari" : "English"}.` },
     ...history,
   ];
 }

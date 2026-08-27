@@ -5,6 +5,7 @@ import { useLocation } from "wouter";
 import { AIChatBox } from "@/components/AIChatBox";
 import { NorthStarMark } from "@/components/NorthStarMark";
 import { trpc } from "@/lib/trpc";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 type ConversationMessage = { role: "user" | "assistant"; content: string };
 
@@ -17,6 +18,7 @@ const guidedQuestions = [
 
 export function PolarAssistantLive() {
   const [, navigate] = useLocation();
+  const { language } = useLanguage();
   const [messages, setMessages] = useState<ConversationMessage[]>([]);
   const chat = trpc.polarAssistant.chat.useMutation({
     onSuccess: ({ answer }) => {
@@ -37,7 +39,7 @@ export function PolarAssistantLive() {
       { role: "user", content: content.trim() },
     ];
     setMessages(nextMessages);
-    chat.mutate({ messages: nextMessages.slice(-8) });
+    chat.mutate({ language, messages: nextMessages.slice(-8) });
   };
 
   return <>

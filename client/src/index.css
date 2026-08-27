@@ -33,6 +33,7 @@
 @import "./footer-type-refinement.css";
 @import "./explorer-dark-surfaces.css";
 @import "./polar-assistant-live.css";
+@import "./language-selector.css";
 
 @custom-variant dark (&:is(.dark *));
 

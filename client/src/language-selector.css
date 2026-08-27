@@ -1,0 +1,12 @@
+/* Compact, keyboard-accessible language control shared across public and governed POLARIS routes. */
+.language-selector { align-items: center; border: 1px solid rgba(148, 201, 210, .3); color: #a8d4da; display: inline-flex; gap: 6px; height: 31px; padding: 0 8px; position: relative; }
+.language-selector select { appearance: none; background: transparent; border: 0; color: inherit; cursor: pointer; font-family: "Space Grotesk", sans-serif; font-size: 9px; font-weight: 500; letter-spacing: .08em; outline: 0; padding: 0 11px 0 0; }
+.language-selector select option { background: #082136; color: #eafcfd; }
+.language-selector::after { border-bottom: 1px solid currentColor; border-right: 1px solid currentColor; content: ""; height: 4px; pointer-events: none; position: absolute; right: 8px; top: 11px; transform: rotate(45deg); width: 4px; }
+.language-selector:focus-within { border-color: #84eff5; box-shadow: 0 0 0 2px rgba(132, 239, 245, .16); }
+.language-selector:has(select:disabled) { opacity: .7; }
+.language-selector i { background: #84eff5; border-radius: 50%; height: 4px; margin-left: 2px; width: 4px; }
+.site-header .language-selector { margin-right: 2px; }
+.ice-login-header .language-selector { margin-left: auto; }
+.portal-header-actions .language-selector { flex: 0 0 auto; }
+@media (max-width: 760px) { .site-header .language-selector { display: none; } .mobile-menu .language-selector { display: inline-flex; margin-top: 12px; width: max-content; } .ice-login-header .language-selector { margin-left: 0; } .portal-header-actions .language-selector { display: none; } }
