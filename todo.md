@@ -92,3 +92,10 @@
 - [x] Apply the new hero image with a readable editorial overlay and restrained movement.
 - [x] Verify the updated main-page hero at desktop and mobile widths, then run the production build.
 - [x] Save and deliver the upgraded main-page hero checkpoint.
+
+## Hero Visual Correction
+
+- [x] Identify why the prior hero replacement was not visibly distinct in the preview.
+- [x] Force a cache-safe, unmistakably different hero image reference for the main landing page.
+- [x] Verify the corrected hero in preview and production build.
+- [x] Save and deliver the corrected hero checkpoint.
