@@ -1,0 +1,3 @@
+/* Mobile polar-image safeguard: remove the auxiliary readout so the field caption remains unobstructed. */
+@media (max-width: 560px) { .ice-login-visual .ice-visual-readout { display: none; } }
+

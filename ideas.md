@@ -78,3 +78,5 @@ The wordmark is a wide, technical **POLARIS** lockup with carefully spaced geome
 - Access surfaces behave as observatory **access ledgers**: a readable credential sheet carries coordinate rules, archive numbers, mode labels, and mission-status framing rather than looking like a generic login card.
 - Aurora Cyan is used only for active access mode, verified access, orbital paths, coordinates, and primary action states; inactive controls remain cool white and muted slate.
 - Role selection is expressed as an instrument mode—each choice is numbered, factual, and part of the same polar observation workflow.
+- Access entry uses factual **access mode** and credential language rather than generic workspace language; every polar image includes a compact observation state, coordinate, or verified-evidence marker without decorative clutter.
+- The access-page visual field is deliberately free of decorative orbit lines: the slow moving ice image, one coordinate anchor, and a compact evidence readout carry the observation story.

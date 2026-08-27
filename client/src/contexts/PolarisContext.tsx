@@ -84,9 +84,9 @@ export function PolarisProvider({ children }: { children: ReactNode }) {
     const matchingPerson = people.find((person) => person.email.toLowerCase() === normalizedEmail && person.status === "Active" && (role === "Explorer" ? person.role === "Explorer" || person.role === "Educator" : person.role === "Researcher"));
     if (matchingPerson) return { state: "approved" as const, message: "This address already has an active Admin-issued access grant." };
     const existingRequest = accessRequests.find((request) => request.email === normalizedEmail && request.role === role && request.status === "pending");
-    if (existingRequest) return { state: "pending" as const, message: "This access request is already waiting in the Command queue." };
+    if (existingRequest) return { state: "pending" as const, message: "This access request is already waiting in the Admin review queue." };
     setAccessRequests((current) => [{ id: `access-${Date.now().toString(36)}`, name: name.trim() || "POLARIS applicant", email: normalizedEmail, role, status: "pending", requestedAt: "Just now" }, ...current]);
-    return { state: "pending" as const, message: "Request transmitted. A Command administrator must approve access before this portal can be opened." };
+    return { state: "pending" as const, message: "Request transmitted. An Admin must approve access before this portal can be opened." };
   };
 
   const approveAccess = (id: string) => {
@@ -111,14 +111,14 @@ export function PolarisProvider({ children }: { children: ReactNode }) {
   const signIn = (email: string, role: PortalRole) => {
     const normalizedEmail = email.trim().toLowerCase();
     if (role === "Command") {
-      if (normalizedEmail === "command@polaris.in") { setSession({ name: "POLARIS Command", email: normalizedEmail, role }); return { state: "approved" as const, message: "Command access verified." }; }
-      return { state: "denied" as const, message: "Command access is reserved for the designated Admin account in this local demonstration." };
+      if (normalizedEmail === "command@polaris.in") { setSession({ name: "POLARIS Admin", email: normalizedEmail, role }); return { state: "approved" as const, message: "Admin access verified." }; }
+      return { state: "denied" as const, message: "Admin access is reserved for the designated administrator." };
     }
     const person = people.find((item) => item.email.toLowerCase() === normalizedEmail);
     const roleMatches = person && (role === "Explorer" ? person.role === "Explorer" || person.role === "Educator" : person.role === "Researcher");
     if (person?.status === "Active" && roleMatches) { setSession({ name: person.name, email: person.email, role }); return { state: "approved" as const, message: "Admin-issued access grant verified." }; }
     const request = accessRequests.find((item) => item.email === normalizedEmail && item.role === role);
-    if (request?.status === "pending") return { state: "pending" as const, message: "Access request is pending Command approval." };
+    if (request?.status === "pending") return { state: "pending" as const, message: "Access request is pending Admin approval." };
     return { state: "denied" as const, message: "No active Admin-issued access grant exists for this role." };
   };
 

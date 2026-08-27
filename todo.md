@@ -48,3 +48,18 @@
 - [ ] Replace the white login surface with a readable midnight, ice-cyan, and polar-imagery interface.
 - [x] Verify the new dark login composition and controls at desktop and mobile widths, then run the production build.
 - [x] Save and deliver the dark polar-night login checkpoint.
+
+## Individual Role Login Refinement
+
+- [x] Define the distinct Explorer, Researcher, and Admin panel content shown one role at a time.
+- [x] Rework the left-side access panel into individual role states while retaining role switching and approval logic.
+- [x] Replace user-facing “Command” terminology with “Admin” across access, permissions, and related workspace controls.
+- [x] Verify role-switching, access controls, and responsive layout, then run the production build.
+- [x] Save and deliver the individual-role login checkpoint.
+
+## Clean Moving Polar Visual
+
+- [ ] Define a calmer right-panel image treatment with no visible orbital line overlays.
+- [x] Remove line overlays and apply slow, professional polar-image motion to the login visual panel.
+- [x] Verify the cleaned login visual at desktop and mobile widths, then run the production build.
+- [x] Save and deliver the simplified moving-image login checkpoint.

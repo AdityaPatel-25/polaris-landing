@@ -24,6 +24,7 @@ export function PortalShell({ role, roleLabel, nav, children, action }: PortalSh
   const [mobileOpen, setMobileOpen] = useState(false);
   const [location, navigate] = useLocation();
   const { session, signOut } = usePolaris();
+  const visibleRole = role === "Command" ? "Admin" : role;
   const isActive = (item: PortalNavItem) => location === item.href || (item.href.split("/").length > 2 && location.startsWith(`${item.href}/`));
   const activeItem = nav.find(isActive)?.label ?? "Overview";
 
@@ -34,8 +35,8 @@ export function PortalShell({ role, roleLabel, nav, children, action }: PortalSh
           <Link href="/" className="rail-brand" aria-label="POLARIS landing page"><NorthStarMark /><span>POLARIS</span></Link>
           <button className="rail-collapse" onClick={() => setCollapsed((value) => !value)} aria-label={collapsed ? "Expand sidebar" : "Collapse sidebar"}>{collapsed ? <ChevronRight size={16} /> : <ChevronLeft size={16} />}</button>
         </div>
-        <div className="role-chip"><Compass size={13} /><span>{role} / {roleLabel}</span></div>
-        <nav className="portal-nav" aria-label={`${role} portal navigation`}>
+        <div className="role-chip"><Compass size={13} /><span>{visibleRole} / {roleLabel}</span></div>
+        <nav className="portal-nav" aria-label={`${visibleRole} portal navigation`}>
           {nav.map((item) => {
             const active = isActive(item);
             return <Link href={item.href} className={`portal-nav-link ${active ? "portal-nav-link--active" : ""}`} key={item.href} onClick={() => setMobileOpen(false)}><item.icon size={18} /><span>{item.label}</span>{active && <i />}</Link>;
