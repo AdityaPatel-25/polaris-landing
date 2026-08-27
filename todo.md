@@ -163,3 +163,10 @@
 - [x] Add a reusable, accessible back-navigation control with safe route fallbacks.
 - [x] Verify the control across relevant desktop and mobile portal routes, then run the production build.
 - [x] Save and deliver the portal back-navigation update.
+
+## Prominent Header Back Navigation
+
+- [x] Inspect the current portal-header layout and back-control placement.
+- [x] Move the Back control into the top header action area and increase its visual weight.
+- [x] Verify header balance at desktop and mobile widths, then run the production build.
+- [x] Save and deliver the repositioned Back control.
