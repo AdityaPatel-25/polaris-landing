@@ -61,3 +61,5 @@ The designated Admin profile has been loaded again. The remaining validation wil
 The live Admin Users route now shows the new compact Back control in the shared portal header. It is visible only on the subpage, leaving the dashboard header uncluttered as intended.
 
 Clicking the shared Back control returned from Admin → Users to the immediately previous Admin dashboard route, confirming that the browser-history path functions correctly for contextual portal navigation.
+
+Admin moderation workflow verification: `submitResearch` adds the new record to the shared research ledger with `pending` status; the Admin review actions call `reviewResearch` to transition that same record to `published` or `revision`; the Explorer evidence atlas indexes only records whose status is `published`. This preserves the intended researcher → pending review → Admin decision → Explorer discovery path entirely in the shared local state.

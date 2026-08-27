@@ -27,6 +27,7 @@
 @import "./signal-type-scale.css";
 @import "./all-dark-landing.css";
 @import "./researcher-workspace.css";
+@import "./admin-command-center.css";
 
 @custom-variant dark (&:is(.dark *));
 

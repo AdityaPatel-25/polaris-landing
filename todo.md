@@ -170,3 +170,12 @@
 - [x] Move the Back control into the top header action area and increase its visual weight.
 - [x] Verify header balance at desktop and mobile widths, then run the production build.
 - [x] Save and deliver the repositioned Back control.
+
+## Admin Portal Moderation Command Center
+
+- [x] Audit Admin routes, current moderation workflow, and remaining white or near-white surfaces.
+- [x] Establish a dark scientific command-center visual system across shared Admin surfaces.
+- [x] Refine research approvals, user, content, media, expedition, and analytics management views.
+- [x] Verify Researcher submission to pending review, Admin approval, published status, and Explorer discovery using local state.
+- [x] Review the refined Admin Portal at desktop and mobile widths, then run the production build.
+- [x] Save and deliver the Admin Portal command-center checkpoint.
