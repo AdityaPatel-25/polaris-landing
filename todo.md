@@ -8,7 +8,7 @@
 - [x] Implement Admin dashboard, moderation queues, content review, and platform analytics workflows.
 - [x] Connect cross-role workflow transitions using realistic local mock state.
 - [x] Validate key desktop/mobile flows, type safety, and production build.
-- [ ] Save the completed application checkpoint and deliver it.
+- [x] Save the completed application checkpoint and deliver it.
 
 ## Visual and UX Audit Refinement
 
@@ -45,7 +45,7 @@
 ## Dark Polar-Night Login Refinement
 
 - [x] Define the dark glacier-and-star-field direction without using the supplied watermarked images.
-- [ ] Replace the white login surface with a readable midnight, ice-cyan, and polar-imagery interface.
+- [x] Replace the white login surface with a readable midnight, ice-cyan, and polar-imagery interface.
 - [x] Verify the new dark login composition and controls at desktop and mobile widths, then run the production build.
 - [x] Save and deliver the dark polar-night login checkpoint.
 
@@ -59,7 +59,7 @@
 
 ## Clean Moving Polar Visual
 
-- [ ] Define a calmer right-panel image treatment with no visible orbital line overlays.
+- [x] Define a calmer right-panel image treatment with no visible orbital line overlays.
 - [x] Remove line overlays and apply slow, professional polar-image motion to the login visual panel.
 - [x] Verify the cleaned login visual at desktop and mobile widths, then run the production build.
 - [x] Save and deliver the simplified moving-image login checkpoint.
@@ -68,10 +68,10 @@
 
 - [x] Audit the Explorer dashboard, repository, research detail, expedition map, media, quiz, and assistant experiences.
 - [x] Rework the Knowledge Repository and research detail route into editorial evidence-led exploration journeys.
-- [ ] Make the Expedition Map an immersive interactive highlight and strengthen the Media Gallery’s scientific visual browsing.
-- [ ] Improve the Quiz and Polar Assistant with exploratory interactions, clear feedback, and refined motion.
-- [ ] Validate all revised Explorer routes at desktop and mobile widths, then run the production build.
-- [ ] Save and deliver the completed Explorer portal refinement.
+- [x] Make the Expedition Map an immersive interactive highlight and strengthen the Media Gallery’s scientific visual browsing.
+- [x] Improve the Quiz and Polar Assistant with exploratory interactions, clear feedback, and refined motion.
+- [x] Validate all revised Explorer routes at desktop and mobile widths, then run the production build.
+- [x] Save and deliver the completed Explorer portal refinement.
 
 ## Login Visual Refresh
 
@@ -79,3 +79,9 @@
 - [x] Apply slow image movement and a readable dark overlay to the replacement visual.
 - [x] Verify the updated login visual at desktop and mobile widths, then run the production build.
 - [x] Save and deliver the refreshed login visual checkpoint.
+
+## Remaining Work Completion Audit
+
+- [x] Review every unfinished checklist item and determine whether it is complete, pending, or superseded.
+- [x] Complete any remaining in-scope POLARIS route refinements and verify the final application state.
+- [x] Save and deliver the fully completed project checkpoint.
