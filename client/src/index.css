@@ -23,6 +23,7 @@
 @import "./landing-restraint.css";
 @import "./login-visual-refresh.css";
 @import "./explorer-engagement.css";
+@import "./main-hero-refresh.css";
 
 @custom-variant dark (&:is(.dark *));
 

@@ -85,3 +85,10 @@
 - [x] Review every unfinished checklist item and determine whether it is complete, pending, or superseded.
 - [x] Complete any remaining in-scope POLARIS route refinements and verify the final application state.
 - [x] Save and deliver the fully completed project checkpoint.
+
+## Main Hero Visual Refresh
+
+- [x] Define a more distinctive polar-space hero visual for the right-side main-page split.
+- [x] Apply the new hero image with a readable editorial overlay and restrained movement.
+- [x] Verify the updated main-page hero at desktop and mobile widths, then run the production build.
+- [x] Save and deliver the upgraded main-page hero checkpoint.

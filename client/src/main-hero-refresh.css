@@ -1,0 +1,30 @@
+/* Main hero refresh: an oblique Arctic ice-shelf observation brings higher visual specificity to the right-side landing-page split while preserving the dark editorial reading axis. */
+.hero-section .hero-image {
+  background-position: 66% 50%;
+  background-size: cover;
+}
+
+.hero-section .hero-shade {
+  background: linear-gradient(90deg, rgba(1, 14, 27, .98) 0%, rgba(1, 15, 28, .91) 30%, rgba(2, 18, 31, .46) 62%, rgba(2, 18, 31, .24) 100%);
+}
+
+.hero-section .hero-telemetry {
+  background: rgba(3, 26, 43, .86);
+  border-color: rgba(140, 231, 238, .30);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-section .hero-image {
+    animation: main-ice-shelf-drift 34s cubic-bezier(.42, 0, .18, 1) infinite alternate;
+  }
+}
+
+@keyframes main-ice-shelf-drift {
+  from { background-position: 64% 52%; transform: scale(1.005); }
+  to { background-position: 71% 46%; transform: scale(1.04); }
+}
+
+@media (max-width: 760px) {
+  .hero-section .hero-image { background-position: 68% 50%; }
+  .hero-section .hero-shade { background: linear-gradient(90deg, rgba(1, 14, 27, .96), rgba(2, 18, 31, .62) 70%, rgba(2, 18, 31, .38)); }
+}

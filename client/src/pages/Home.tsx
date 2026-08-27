@@ -22,7 +22,7 @@ import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import { NorthStarMark } from "@/components/NorthStarMark";
 
-const heroImage = "/manus-storage/polaris-hero-earth_e6b6028e.jpg";
+const heroImage = "/manus-storage/polaris-main-hero-ice-shelf_c2edcd91.jpg";
 const arcticImage = "/manus-storage/polaris-arctic_5aabdf27.jpg";
 const antarcticaImage = "/manus-storage/polaris-antarctica_6e927572.jpg";
 const mapImage = "/manus-storage/polaris-expedition-map_a222e81c.jpg";
